@@ -1,6 +1,5 @@
 <?php
 namespace App\Http\Controllers\Common;
-
 use App\User;
 use Validator;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
