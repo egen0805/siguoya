@@ -11,6 +11,25 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+//前台路由
+require_once('routes_home.php');
+
+//后台路由
+require_once('routes_admin.php');
+
+//全局路由
+Route::post('/common/file/uploadFile','Common\FileController@uploadFile');
+Route::get('/','Home\IndexController@index');
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,121 @@
+/*变量设置*/
+@successColor:#4cae4c;
+@lineColor:#44b549;
+@quoteColor:#44b549;
+@imgMarginRight:15px;
+/*通用组件*/
+.common-border-top{
+  border-top: 4px solid @lineColor;
+}
+.common-border-top-sub{
+  border-top: 2px dashed @lineColor;
+}
+/*******************修改bootstrap相关设置*******************/
+//文件上传按钮
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+  }
+}
+.btn-success-empty{
+  background-color: transparent;
+  color: @successColor;
+  border: 1px solid @successColor;
+  &:hover{
+    background-color: @successColor;
+    color: #fff;
+  }
+}
+
+.padding-none{
+  padding: 0;
+}
+
+.panel-body{
+  &+&{
+    padding-top: 10px;
+    .common-border-top-sub
+  }
+}
+
+.navbar-fixed-top{
+  .common-border-top
+}
+
+p{
+  margin-top: 10px;
+}
+
+blockquote {
+  //border-left: 4px solid @quoteColor;
+}
+
+.jumbotron{
+  text-align: center;
+}
+.well{
+  margin-top: 15px;
+}
+
+/******************It's my style******************/
+body{
+  background-image: url(../../img/common/style/bg.png);
+  padding: 70px 0;
+}
+
+
+.li-hot{
+  width: 100%;
+  display: inline-block;
+  &+&{
+    margin-top: 15px;
+    padding-top: 15px;
+    .common-border-top-sub
+  }
+}
+
+.img-out{
+  width: 240px;
+  height: 135px;
+  overflow: hidden;
+  margin-right: @imgMarginRight;
+  float: left;
+  img{
+    -webkit-transform: scale(1);
+    -webkit-transition: 1s;
+  }
+  img:hover{
+    -webkit-transform: scale(1.2);
+  }
+}
+
+.img-list-cover{
+  width: 320px;
+  height: 180px;
+}
+
+.panel-img-out{
+  position: relative;
+  overflow: hidden;
+  img{
+    -webkit-transform: scale(1);
+    -webkit-transition: 1s;
+  }
+  img:hover{
+    -webkit-transform: scale(1.2);
+  }
+}
