@@ -44,8 +44,12 @@
             </div>
         </div>
         <div class="form-group">
-            <?=Form::label('articleTitle','文章详情') ?>
-            <?=Form::text('articleOriginUrl',)?>
+            <?=Form::label('articleTags','文章标签[使用逗号隔开]') ?>
+            <?=Form::textarea('articleTags',null,['id'=>'articleTags','class'=>'form-control'])?>
+        </div>
+        <div class="form-group">
+            <?=Form::label('articleTitle','文章来源[作者,链接]') ?>
+            <?=Form::text('articleOriginUrl',null,['class'=>'form-control','id'=>'articleOriginUrl'])?>
         </div>
         <?=Form::button('确定发布',['id'=>'submit','class'=>'btn btn-primary btn-block'])?>
     <?=Form::close() ?>

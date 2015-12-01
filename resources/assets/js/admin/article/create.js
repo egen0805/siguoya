@@ -100,7 +100,10 @@ $(function(){
                             article_cover:articleForm.$articleCover.val(),
                             article_summary:articleForm.$articleSummary.val(),
                             article_content:editor.getMarkdown(),
-                            article_origin_url:editor.$articleOriginUrl.val()
+                            article_tags:$("#articleTags").val(),
+                            article_origin_url:function(){
+                                return JSON.stringify(articleForm.$articleOriginUrl.val().split(','));
+                            }
                         },
                         success:function(data){
                             if(data==1){

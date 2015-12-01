@@ -15,7 +15,7 @@ class IndexController extends Controller{
 		$articleClassifyModel=new ArticleClassify();
 		$articleModel=new Article();
 		//分类
-		$articleClassify=$articleClassifyModel->getAllParentClassify()->toArray();
+		$articleClassify=ArticleClassify::getAllParentClassify()->toArray();
 		foreach($articleClassify as $key=>$value){
 			$articleClassify[$key]['sub_classify']=$articleClassifyModel->getClassifyByPid($value['classify_id'])
 				->toArray();

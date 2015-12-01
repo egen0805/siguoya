@@ -44,6 +44,10 @@
             </div>
         </div>
         <div class="form-group">
+            <?=Form::label('articleTags','文章标签') ?>
+            <?=Form::textarea('articleTags',$article->article_tags,['id'=>'articleTags','class'=>'form-control'])?>
+        </div>
+        <div class="form-group">
             <?=Form::label('articleTitle','文章出处') ?>
             <?=Form::text('articleOriginUrl',$article->article_origin_url,['id'=>'articleOriginUrl','class'=>'form-control'])?>
         </div>

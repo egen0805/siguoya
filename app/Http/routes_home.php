@@ -8,6 +8,18 @@
 
 Route::group(['namespace'=>'Home'],function(){
 
+
+	Route::get('/home/arithmetic/javascript/datahandler','ArticleController@arithmetic');
+	Route::get('/home/arithmetic/javascript/dataselect','ArticleController@arithmetic');
+	Route::get('/home/arithmetic/javascript/dataorder','ArticleController@arithmetic');
+	Route::get('/home/arithmetic/javascript/datacode','ArticleController@arithmetic');
+
+	Route::get('home/arithmetic/javascript',function(){
+		return view('home.article.preview');
+	});
+	Route::get('home/arithmetic/javascript/{articlelist}','ArticleController@articlelist');
+	Route::get('home/arithmetic/javascript/{articlelist}/{id}','ArticleController@show');
+
 	Route::get('/home/about/me',function(){
 		return view('home.about.me');
 	});
@@ -18,10 +30,6 @@ Route::group(['namespace'=>'Home'],function(){
 
 	Route::get('home/{classify_main}/{classify_sub}','ArticleController@index');
 	Route::get('home/{classify_main}/{classify_sub}/{id}','ArticleController@show');
-
-
-
-
 
 	Route::get('/home','IndexController@index');
 });

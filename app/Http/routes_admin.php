@@ -15,9 +15,12 @@
 Route::group(['namespace'=>'Admin','middleware'=>['auth']],function(){
 	Route::get('/admin/','IndexController@index');
 	Route::get('/admin/index/index','IndexController@index');
+	/*文章*/
 	Route::resource('/admin/article','ArticleController');
 	Route::post('/admin/article/ajaxClassifyList','ArticleController@ajaxClassifyList');
 	Route::post('/admin/article/store','ArticleController@store');
+	/*类别*/
+	Route::resource('/admin/classify','ClassifyController');
 });
 
 Route::controllers([

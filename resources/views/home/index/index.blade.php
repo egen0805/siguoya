@@ -64,7 +64,7 @@
                 <a href="/home/os/tools/greenvpn" target="_blank"><img src="/img/home/index/greenvpn.jpg " class="img-responsive" alt="greenvpn"></a>
             </div>
             <div class="panel-footer">
-                如果你连谷歌都不知道,还能知道什么?
+                <span class="text-info">程序员的梦想应该是星辰大海</span>
             </div>
         </div>
         {{--<div class="panel panel-default">--}}
@@ -87,7 +87,7 @@
                 <a href="/home/about/me" target="_blank"><img src="/img/home/index/weixin.jpg" class="img-responsive" alt="个人二维码"></a>
             </div>
             <div class="panel-footer">
-                闷骚的二维码颜色,做爱做的事情
+                <span class="text-info">闷骚的二维码颜色,做爱做的事情</span>
             </div>
         </div>
     </div>

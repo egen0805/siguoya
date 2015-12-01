@@ -4,6 +4,16 @@ use Illuminate\Database\Migrations\Migration;
 class CreateArticlesTable extends Migration{
 	/**
 	 * Run the migrations.
+	 * 文章ID
+	 * 文章标题
+	 * 文章主类
+	 * 文章子类
+	 * 文章封面
+	 * 文章摘要
+	 * 文章内容
+	 * 文章引用来源
+	 * 文章阅览数量
+	 * 文章排序
 	 * @return void
 	 */
 	public function up(){
@@ -17,6 +27,7 @@ class CreateArticlesTable extends Migration{
 			$table->text('article_content');
 			$table->string('article_origin_url');
 			$table->integer('article_view_count',false,true);
+			$table->integer('article_order',false,true);
 			$table->timestamps();
 		});
 	}

@@ -153,4 +153,19 @@ $(function(){
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     }());
+
+    (function(){
+        var $originObj=$('#articleOriginSource');
+        if($originObj){
+            try{
+                var originUrlObj=JSON.parse($originObj.text());
+                $('#articleOriginSource').text(
+                    '作者:'+originUrlObj[0]+'\r\n 原文链接:'+originUrlObj[1]
+                ).attr('href',originUrlObj[1]);
+            }catch(e){
+                console.log('Bug:JSON字符串解析出错');
+            }
+
+        }
+    }());
 });

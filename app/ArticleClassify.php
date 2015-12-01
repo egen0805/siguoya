@@ -11,12 +11,21 @@ use Illuminate\Database\Eloquent\Model;
 class ArticleClassify extends Model{
 
 	protected $primaryKey='classify_id';
+
+
+	public static function getAllClassify(){
+		return ArticleClassify::orderBy('classify_order','ASC')->get()->toArray();
+	}
+
+
 	/**
 	 * 获取所有的父类
 	 * @return mixed
 	 */
-	public function getAllParentClassify(){
-		return ArticleClassify::where('classify_parent_id','=',0)->get();
+	public static function getAllParentClassify(){
+		return ArticleClassify::where('classify_parent_id','=',0)
+				->orderBy('classify_order','asc')
+				->get();
 	}
 
 	/**
@@ -24,8 +33,10 @@ class ArticleClassify extends Model{
 	 * @param $parent_id
 	 * @return mixed
 	 */
-	public function getClassifyByPid($parent_id){
-		return ArticleClassify::where('classify_parent_id','=',$parent_id)->get();
+	public static function getClassifyByPid($parent_id){
+		return ArticleClassify::where('classify_parent_id','=',$parent_id)
+				->orderBy('classify_order','asc')
+				->get();
 	}
 
 	/**
@@ -48,4 +59,5 @@ class ArticleClassify extends Model{
 				->where('classify_alias','=',$classify_name)->get();
 		return $objArray[0]['classify_id'];
 	}
+
 }
