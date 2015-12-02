@@ -1,14 +1,16 @@
 /*变量设置*/
-@successColor:#4cae4c;
-@lineColor:#44b549;
-@quoteColor:#44b549;
+@colorSuccess:#4cae4c;
+@colorLine:#44b549;
+@colorQuote:#44b549;
+@colorInfo:#d9edf7;
+
 @imgMarginRight:15px;
 /*通用组件*/
 .common-border-top{
-  border-top: 4px solid @lineColor;
+  border-top: 4px solid @colorLine;
 }
 .common-border-top-sub{
-  border-top: 2px dashed @lineColor;
+  border-top: 2px dashed @colorLine;
 }
 /*******************修改bootstrap相关设置*******************/
 //文件上传按钮
@@ -33,10 +35,19 @@
 }
 .btn-success-empty{
   background-color: transparent;
-  color: @successColor;
-  border: 1px solid @successColor;
+  color: @colorSuccess;
+  border: 1px solid @colorSuccess;
   &:hover{
-    background-color: @successColor;
+    background-color: @colorSuccess;
+    color: #fff;
+  }
+}
+.btn-info-empty{
+  background-color: transparent;
+  color: #46b8da;
+  border: 1px solid #46b8da;
+  &:hover{
+    background-color: #46b8da;
     color: #fff;
   }
 }
@@ -61,7 +72,7 @@ p{
 }
 
 blockquote {
-  //border-left: 4px solid @quoteColor;
+  //border-left: 4px solid @colorQuote;
 }
 
 .jumbotron{
@@ -131,5 +142,19 @@ body{
       display: block;
       margin-left: 20px;
     }
+  }
+}
+
+#home_backend_tools{
+  #phpstorm_imgs{
+    .tab-content{
+      margin-top: 20px;
+    }
+  }
+  #redirectLessons{
+    margin-top: 20px;
+  }
+  #phpstorm_intro{
+    padding-top: 30px;
   }
 }

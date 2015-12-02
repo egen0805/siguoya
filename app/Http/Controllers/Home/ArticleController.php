@@ -64,4 +64,14 @@ class ArticleController extends Controller{
 				->where('article_sub_classify','=',$mainClassifyId)->get();
 		return view('home.article.list',compact('articleList'));
 	}
+
+	public function phpstorm(){
+		return view('home.article.phpstorm');
+	}
+
+	public function phpstormlist(){
+		$articleList=Article::where('article_tags','like',"%phpstorm%")
+				->get();
+		return view('home.article.index',compact('articleList'));
+	}
 }

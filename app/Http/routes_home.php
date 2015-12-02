@@ -8,6 +8,9 @@
 
 Route::group(['namespace'=>'Home'],function(){
 
+	Route::get('/home/backend/tools','ArticleController@phpstorm');
+	Route::get('/home/backend/tools/phpstorm','ArticleController@phpstormlist');
+	Route::get('/home/backend/tools/phpstorm/{id}','ArticleController@show');
 
 	Route::get('/home/arithmetic/javascript/datahandler','ArticleController@arithmetic');
 	Route::get('/home/arithmetic/javascript/dataselect','ArticleController@arithmetic');

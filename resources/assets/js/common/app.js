@@ -168,4 +168,25 @@ $(function(){
 
         }
     }());
+
+    (function(){
+        //使bs3-tabs里面的组件自动切换
+        var $nav_tab=$('.nav-tabs'),count=$nav_tab.find('a').length,$a=$nav_tab.find('a'),order=1,timer;
+        function autoSwitch(){
+            $($a.get(order)).trigger('click');
+            order++;
+            if(order>=count){
+                order=0;
+            }
+        }
+        timer=setInterval(autoSwitch,3000);
+        $('.tab-pane').hover(function(){
+            clearInterval(timer);
+        },function(){
+            timer=setInterval(autoSwitch,3000);
+        });
+        $('.redirectLessons').click(function(){
+            window.location.href='/home/backend/tools/phpstorm/';
+        })
+    }());
 });
