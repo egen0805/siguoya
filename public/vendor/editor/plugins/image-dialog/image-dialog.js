@@ -46,6 +46,7 @@
                         return (settings.imageUpload)?"<div class=\""+classPrefix+"file-input\">"+
                         "<input type=\"file\" name=\"file\" accept=\"image/*\" />"+
                         "<input type=\"hidden\" name=\"filePlace\" value=\'"+filePlace+"\' />"+
+                        "<input type=\"hidden\" name=\"_editor\" value=\""+true+"\" />"+
                         "<input type=\"hidden\" name=\"_token\" value=\""+token+"\" />"+
                         "<input type=\"submit\" value=\""+imageLang.uploadButton+"\" />"+
                         "</div>":"";

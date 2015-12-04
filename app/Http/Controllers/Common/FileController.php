@@ -33,7 +33,7 @@ class FileController extends Controller
 			    }
 		    }
 		    if($request->file('file')->move($fileFolder,$filePlaceName)){
-			    echo $request->input('editor')?json_encode([
+			    echo $request->input('_editor')?json_encode([
 				    //用于返回给editormd
 				    'success'=>1,
 				    'message'=>'上传成功',
