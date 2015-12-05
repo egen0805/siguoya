@@ -13,7 +13,8 @@ class Article extends Model{
 			'article_summary',
 			'article_content',
 			'article_tags',
-			'article_origin_url',
+			'article_keywords',
+			'article_origin_url'
 	];
 
 	public function getTenNewArticle(){
@@ -25,7 +26,7 @@ class Article extends Model{
 	}
 
 	public function getArticleCoverAttribute($value){
-		return json_decode($value)->file_url;
+		return json_decode($value);
 	}
 
 	public function getArticleMainClassifyAttribute($value){
@@ -34,6 +35,11 @@ class Article extends Model{
 
 	public function getArticleSubClassifyAttribute($value){
 		return ArticleClassify::getClassifyName($value);
+	}
+
+	public function getArticleOriginUrlAttribute($value){
+		$value=json_decode($value);
+		return $value[0].','.$value[1];
 	}
 
 	public function getCreatedAtAttribute($value){

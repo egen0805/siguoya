@@ -17,15 +17,8 @@ var pngquant = require('imagemin-pngquant');
 
 elixir(function(mix) {
     //common
-    mix.less('common/app.less','public/css/common/');
-    mix.scripts('common/app.js','public/js/common/');
-    //Admin
-    mix.less('admin/article/create.less','public/css/admin/article/');
-    mix.scripts('admin/article/create.js','public/js/admin/article/');
-    mix.scripts('admin/article/edit.js','public/js/admin/article/');
-    //Home
-    mix.less('home/index/index.less','public/css/home/index/');
-    mix.scripts('home/index/index.js','public/js/home/index/');
+    mix.less('app.less','public/css/app.min.css');
+    mix.scripts('app.js','public/js/app.min.js');
 });
 
 gulp.task('img',function(){

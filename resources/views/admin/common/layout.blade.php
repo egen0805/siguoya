@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <title>后台管理-思过崖</title>
     <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/common/app.css">
     @yield('css')
-    <script type="text/javascript" src="/js/common/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/app.min.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/js/common/holder.min.js"></script>
+    <script type="text/javascript" src="/js/holder.min.js"></script>
     @yield('js')
-    <script type="text/javascript" src="/js/common/app.js"></script>
+    <script type="text/javascript" src="/js/app.min.js"></script>
 </head>
 <body>
     <div id="header">

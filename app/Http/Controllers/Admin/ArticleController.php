@@ -35,8 +35,12 @@ class ArticleController extends Controller
 	}
 
 	public function update(){
+		$data=\Request::all();
+		if(gettype(json_decode(\Request::input('article_cover')))=='NULL'){
+			unset($data['article_cover']);
+		}
 		$article=Article::find(\Request::input('article_id'));
-		echo $article->update(\Request::all());
+		echo $article->update($data);
 	}
 
 	public function destroy(){

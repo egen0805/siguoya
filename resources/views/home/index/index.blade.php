@@ -1,10 +1,4 @@
 @extends('home.common.layout')
-@section('css')
-    <link rel="stylesheet" href="/css/home/index/index.css">
-@endsection()
-@section('js')
-    <script type="text/javascript" src="/js/home/index/index.js"></script>
-@endsection()
 @section('main')
     <div class="col-xs-3">
         <div class="panel panel-default">
@@ -16,7 +10,7 @@
                 <ul class="list-unstyled">
                     <li>
                         <a href="/home/{{$article->article_main_classify.'/'.$article->article_sub_classify.'/'.$article->article_id}}">
-                            <img class="img-responsive" src="{{$article->article_cover}}" alt="文章图片">
+                            <img class="img-responsive" src="{{$article->article_cover->file_url}}" alt="{{$article->article_title}}封面">
                         </a>
                         <p class="text-center">
                             <a href="/home/{{$article->article_main_classify.'/'.$article->article_sub_classify.'/'.$article->article_id}}">
@@ -43,7 +37,7 @@
                             </blockquote>
                             <div class="img-out">
                                 <a href="/home/{{$article->article_main_classify.'/'.$article->article_sub_classify.'/'.$article->article_id}}" target="_blank">
-                                    <img class="img-responsive img-hot pull-left" src="{{$article->article_cover}}" alt="文章图片">
+                                    <img class="img-responsive img-hot pull-left" src="{{$article->article_cover->file_url}}" alt="文章图片">
                                 </a>
                             </div>
                             <p class="article_content">
