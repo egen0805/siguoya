@@ -55,7 +55,7 @@
     <div class="col-xs-6">
         <div class="form-group">
             <?=Form::label('articleTitle','文章出处') ?>
-            <?=Form::text('articleOriginUrl',count($article->article_origin_url)==2?$article->article_origin_url[0].','.$article->article_origin_url[1]:null,['id'=>'articleOriginUrl','class'=>'form-control'])?>
+            <?=Form::text('articleOriginUrl',isset($article) && count($article->article_origin_url)==2?$article->article_origin_url[0].','.$article->article_origin_url[1]:null,['id'=>'articleOriginUrl','class'=>'form-control'])?>
         </div>
     </div>
 </div>
