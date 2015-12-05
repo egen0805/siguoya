@@ -43,13 +43,17 @@ class ArticleController extends Controller{
 	/**
 	 * 获取文章详情
 	 * 并更新文章浏览次数
-
+	 * 相关推荐
 	 */
 	public function show(){
-		$article=Article::find($this->urlArray[count($this->urlArray)-1]);
+		$articleId=$this->urlArray[count($this->urlArray)-1];
+		$article=Article::find($articleId);
 		$article->article_view_count+=1;
 		$article->save();
-		return view('home.article.show',compact('article'));
+		$classifyId=ArticleClassify::getClassifyId($article->article_sub_classify);
+		$referArticleList=Article::take(8)->where('article_sub_classify','=',$classifyId)
+				->where('article_id','!=',$article->article_id)->get();
+		return view('home.article.show',compact('article','referArticleList'));
 	}
 
 	/**

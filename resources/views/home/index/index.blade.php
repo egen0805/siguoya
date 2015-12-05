@@ -61,18 +61,6 @@
                 <span class="text-info">程序员的梦想应该是星辰大海</span>
             </div>
         </div>
-        {{--<div class="panel panel-default">--}}
-            {{--<div class="panel-heading">--}}
-                {{--<h3 class="panel-title">迅雷会员账号</h3>--}}
-            {{--</div>--}}
-            {{--<div class="panel-body padding-none">--}}
-                {{--<ul>--}}
-                    {{--<li>账号306104228:1<br/> 密码1113773</li>--}}
-                    {{--<li>账号306104228:1<br/> 密码1113773</li>--}}
-                    {{--<li>账号306104228:1<br/> 密码1113773</li>--}}
-                {{--</ul>--}}
-            {{--</div>--}}
-        {{--</div>--}}
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">扫我! 扫我!</h3>
@@ -83,6 +71,16 @@
             <div class="panel-footer">
                 <span class="text-info">闷骚的二维码颜色,做爱做的事情</span>
             </div>
+        </div>
+        <div class="panel panel-default">
+        	  <div class="panel-heading">
+        			<h3 class="panel-title">友情链接</h3>
+        	  </div>
+        	  <div class="panel-body">
+        			<ul class="list-unstyled">
+                        <li><a href="http://irudder.me/wpblog/">艾文逗</a></li>
+                    </ul>
+        	  </div>
         </div>
     </div>
 @endsection

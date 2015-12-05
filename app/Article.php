@@ -38,10 +38,7 @@ class Article extends Model{
 	}
 
 	public function getArticleOriginUrlAttribute($value){
-		$value=json_decode($value);
-		if(count($value)==2){
-			return $value[0].','.$value[1];
-		}
+		return json_decode($value);
 	}
 
 	public function getCreatedAtAttribute($value){
