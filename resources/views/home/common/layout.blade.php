@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>{{$page_title}}</title>
     <!--关键字-->
-    <meta name="keywords" content="{{isset($article)?$article->article_keywords:$page_keyword}}">
+    <meta name="keywords" content="{{preg_match('/\d/',Request::url())?$article->article_keywords:$page_keyword}}">
     <!--页面描述-->
-    <meta name="description" content="{{isset($article)?$article->article_summary:$page_desc}}">
+    <meta name="description" content="{{preg_match('/\d/',Request::url())?$article->article_summary:$page_desc}}">
     <!--使360浏览器通过webkit内核采用极速模式渲染页面-->
     <meta name="renderer" content="webkit">
     <!--CSS Start-->
