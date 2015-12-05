@@ -7,6 +7,6 @@
     <script type="text/javascript" src="/vendor/uploader/src/dmuploader.js"></script>
 @endsection
 @section('main')
-    @include('admin.article.form',['classifyList'=>$classifyList]);
+    @include('admin.article.form',['classifyList'=>$classifyList])
 @stop
 
