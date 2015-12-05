@@ -19,7 +19,7 @@
             <hr/>
             <div id="markdown"></div>
             <div class="well text-info">
-            @if($article->article_origin_url!='[""]')
+            @if($article->article_origin_url)
                 <label class="text-danger">文章来源:</label>
                 <p><a id="articleOriginSource" href="{{$article->article_origin_url}}">{{$article->article_origin_url}}</a></p>
             @else
