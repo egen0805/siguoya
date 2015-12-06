@@ -1,10 +1,4 @@
 @extends('home.common.layout')
-@section('css')
-
-@endsection
-@section('js')
-
-@endsection
 @section('main')
     <div class="row">
         <div class="col-xs-9">
@@ -32,16 +26,16 @@
                 <div class="panel-heading">
                     <h3 class="panel-title">相关推荐</h3>
                 </div>
-                @foreach($referArticleList as $article)
+                @foreach($referArticleList as $art)
                     <div class="panel-body padding-none">
                         <ul class="list-unstyled">
                             <li>
-                                <a href="/home/{{$article->article_main_classify.'/'.$article->article_sub_classify.'/'.$article->article_id}}">
-                                    <img class="img-responsive" src="{{$article->article_cover->file_url}}" alt="{{$article->article_title}}封面">
+                                <a href="/home/{{$art->article_main_classify.'/'.$art->article_sub_classify.'/'.$art->article_id}}">
+                                    <img class="img-responsive" src="{{$art->article_cover->file_url}}" alt="{{$art->article_title}}封面">
                                 </a>
                                 <p class="text-center">
-                                    <a href="/home/{{$article->article_main_classify.'/'.$article->article_sub_classify.'/'.$article->article_id}}">
-                                        {{$article->article_title}}
+                                    <a href="/home/{{$art->article_main_classify.'/'.$art->article_sub_classify.'/'.$art->article_id}}">
+                                        {{$art->article_title}}
                                     </a>
                                 </p>
                             </li>

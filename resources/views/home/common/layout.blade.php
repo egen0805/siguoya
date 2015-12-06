@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>{{$page_title}}</title>
+    <title>{{preg_match('/\d/',Request::url())?$article->article_title.' - 思过崖':$page_title}}</title>
     <!--关键字-->
     <meta name="keywords" content="{{preg_match('/\d/',Request::url())?$article->article_keywords:$page_keyword}}">
     <!--页面描述-->
