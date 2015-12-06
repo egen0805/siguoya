@@ -18,11 +18,11 @@ class Article extends Model{
 	];
 
 	public function getTenNewArticle(){
-		return Article::take(10)->orderBy('created_at','desc')->get();
+		return Article::orderBy('created_at','desc')->get();
 	}
 
 	public function getTenHotArticle(){
-		return Article::take(10)->orderBy('article_view_count','desc')->get();
+		return Article::orderBy('article_view_count','desc')->get();
 	}
 
 	public function getArticleCoverAttribute($value){

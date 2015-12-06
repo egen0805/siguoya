@@ -182,7 +182,7 @@
                                     success:function(data){
                                         if(data==1){
                                             alert('成功');
-                                            location.reload();
+                                            location.href='/admin/article/create';
                                         }
                                     }
                                 });
