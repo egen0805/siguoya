@@ -11,13 +11,20 @@
                 console.log(arg);
                 return;
             }
-            /*百度统计代码*/
+            /*百度*/
             if(location.href.indexOf('admin')<0){
+                //百度统计代码
                 var _hmt=_hmt||[];
                 var hm=document.createElement("script");
                 hm.src="//hm.baidu.com/hm.js?dbc825061da32f4cf32e3c7c56e95034";
                 var s=document.getElementsByTagName("script")[0];
                 s.parentNode.insertBefore(hm,s);
+
+                //主动推送新增链接到百度
+                var bp = document.createElement('script');
+                bp.src = '//push.zhanzhang.baidu.com/push.js';
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(bp, s);
             }
         }());
 
