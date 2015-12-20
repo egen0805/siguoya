@@ -22,7 +22,7 @@
         }());
 
         /**
-         *  Bootstrap组件增强
+         *Bootstrap组件增强
          */
         (function(){
             /*使bs3-tabs里面的组件自动切换*/
@@ -224,7 +224,10 @@
             }
         }());
 
-        //Trash
+
+        /**
+         *  Trash
+         */
         (function(){
             window.global={
 
@@ -349,5 +352,27 @@
                 }
             }
         }());
+
+        /**
+         * home_about_offer
+         */
+        if(window.location.pathname=="/home/about/offer"){
+            (function(){
+                $('#main div:first-child').removeClass('container');
+                $('body').css({
+                    marginBottom:$(window).height()-$('#rate').height()+"px"
+                });
+                $('#main').css({
+                    marginLeft:$(window).width()*0.25
+                })
+                $('#sidebar-ul a').click(function(){
+                    var href=$(this).attr('href');
+                    $('html,body').animate({
+                        scrollTop: $(href).offset().top-55+'px'
+                    },500);
+                    return false;
+                });
+            }())
+        }
     });
 }(window,jQuery));

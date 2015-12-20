@@ -82,9 +82,9 @@ blockquote {
   margin-top: 15px;
 }
 
-/******************It's my style******************/
+/******************CSS reformat******************/
 body{
-  background-image: url(../../img/common/style/bg.png);
+  background-image: url(../img/common/style/bg.png);
   padding: 70px 0;
 }
 
@@ -130,7 +130,8 @@ body{
     -webkit-transform: scale(1.2);
   }
 }
-/*******************\/home/article/show/************/
+
+/******************CSS Module******************/
 #home_article_show{
   #article_mark{
     ul{
@@ -156,5 +157,50 @@ body{
   }
   #phpstorm_intro{
     padding-top: 30px;
+  }
+}
+
+#home_about_offer{
+  padding: 50px 0 !important;
+  overflow-x: hidden;
+  background-image: none !important;
+
+  .sidebarMenu{
+    /*display: none;*/
+    width: 25%;
+    position: fixed;
+    margin: 0;
+    left: 0;
+    padding-top: 50px;
+    height: 90%;
+    background-color: #f8f8f8;
+    overflow-y: hidden;
+  }
+  .sidebarMenu li{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+  }
+  .sidebarMenu a{
+    display: block !important;
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  .mainContent{
+    padding: 0;
+    width: 100%;
+  }
+  .titleArea h1{
+    margin: 0;
+    padding-left: 15px;
+    width: 100% !important;
+    height: 150px;
+    line-height: 150px;
+    background-color: #da4f4a !important;
+    color: #fff;
+  }
+  .contentArea{
+    padding-left: 30px;
   }
 }
