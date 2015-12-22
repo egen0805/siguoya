@@ -51,7 +51,7 @@
                         <ul class="dropdown-menu">
                             <li><a href="{{url('/home/about/me')}}">个人</a></li>
                             <li><a href="{{url('/home/about/offer')}}">求职</a></li>
-                            <li><a href="{{url('/home/about/web')}}">网站</a></li>
+                            {{--<li><a href="{{url('/home/about/web')}}">网站</a></li>--}}
                         </ul>
                     </li>
                 </ul>

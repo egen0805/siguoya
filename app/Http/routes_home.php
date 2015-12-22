@@ -11,8 +11,8 @@ Route::group(['namespace'=>'Home'],function(){
 	Route::get('/home/about/personal',function(){
 		return view('home.about.personal');
 	});
-	Route::get('/home/about/edu',function(){
-		return view('home.about.edu');
+	Route::get('/home/about/web',function(){
+		return view('home.about.web');
 	});
 	Route::get('/home/about/me',function(){
 		return view('home.about.me');
