@@ -1,10 +1,4 @@
 <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-    <ul class="nav navbar-nav pull-left">
-        <li>
-            <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.zh">本站内容使用知识共享署名-非商业性使用-相同方式共享 3.0 Unported许可协议进行许可。</a>
-        </li>
-
-    </ul>
     <ul class="nav navbar-nav pull-right">
         <li>
             <a href="/home/about/me">版权所有 &copy <span class="text-info">思过崖</span></a>
@@ -17,6 +11,9 @@
         </li>
         <li>
             <a href="#">粤ICP备 <span class="text-info">15099320号-1</span></a>
+        </li>
+        <li>
+            <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=924714558&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:924714558:51" alt="点击这里给我发消息" title="点击这里给我发消息"/></a>
         </li>
     </ul>
 </nav>
