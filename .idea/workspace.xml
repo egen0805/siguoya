@@ -2,55 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f45fe4dc-646f-4c90-80b4-8fa67f0d8d34" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/43b86890f42c0d1f8d19a6eeb84ffbba.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/app/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/cache/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/sessions/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/framework/views/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/storage/logs/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wenda/install/index.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wenda/static/css/default/img/favicon.ico" afterPath="$PROJECT_DIR$/wenda/static/css/default/img/favicon1.ico" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wenda/static/css/default/img/logo@2x.png" afterPath="$PROJECT_DIR$/wenda/static/css/default/img/logo1@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/wenda/static/mobile/img/logo.png" afterPath="$PROJECT_DIR$/wenda/static/mobile/img/logo1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/common/product/greenvpn/flipboard-logo.png" afterPath="$PROJECT_DIR$/public/img/common/product/greenvpn/flipboard-logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/common/product/greenvpn/github-logo.png" afterPath="$PROJECT_DIR$/public/img/common/product/greenvpn/github-logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/common/product/greenvpn/head.png" afterPath="$PROJECT_DIR$/public/img/common/product/greenvpn/head.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/common/product/greenvpn/quora-logo-backup.png" afterPath="$PROJECT_DIR$/public/img/common/product/greenvpn/quora-logo-backup.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/common/product/greenvpn/quora-logo.png" afterPath="$PROJECT_DIR$/public/img/common/product/greenvpn/quora-logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/common/product/greenvpn/register.png" afterPath="$PROJECT_DIR$/public/img/common/product/greenvpn/register.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/common/product/greenvpn/tc-logo.jpg" afterPath="$PROJECT_DIR$/public/img/common/product/greenvpn/tc-logo.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/common/product/greenvpn/twitter-logo.png" afterPath="$PROJECT_DIR$/public/img/common/product/greenvpn/twitter-logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/common/product/greenvpn/vip.png" afterPath="$PROJECT_DIR$/public/img/common/product/greenvpn/vip.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/upload/Article/articleCover/20151128/1448683577h5.jpg" afterPath="$PROJECT_DIR$/public/upload/Article/articleCover/20151128/1448683577h5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/upload/Article/articleCover/20151128/1448683607h5.jpg" afterPath="$PROJECT_DIR$/public/upload/Article/articleCover/20151128/1448683607h5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/upload/Article/articleCover/20151128/1448683698h5.jpg" afterPath="$PROJECT_DIR$/public/upload/Article/articleCover/20151128/1448683698h5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/upload/Article/articleCover/20151128/14486940091248902582770.jpg.jpg" afterPath="$PROJECT_DIR$/public/upload/Article/articleCover/20151128/14486940091248902582770.jpg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/upload/Article/articleCover/20151128/14486953541248902582770.jpg.jpg" afterPath="$PROJECT_DIR$/public/upload/Article/articleCover/20151128/14486953541248902582770.jpg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/upload/Article/articleCover/20151128/14486956681248902582770.jpg.jpg" afterPath="$PROJECT_DIR$/public/upload/Article/articleCover/20151128/14486956681248902582770.jpg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/upload/Article/articleCover/20151128/14486957171248902582770.jpg.jpg" afterPath="$PROJECT_DIR$/public/upload/Article/articleCover/20151128/14486957171248902582770.jpg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/upload/Article/articleCover/20151128/14486958981248902582770.jpg.jpg" afterPath="$PROJECT_DIR$/public/upload/Article/articleCover/20151128/14486958981248902582770.jpg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/upload/Article/articleCover/20151201/1448972327640.jpg" afterPath="$PROJECT_DIR$/public/upload/Article/articleCover/20151201/1448972327640.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/upload/Article/articleCover/20151201/1448972536640.jpg" afterPath="$PROJECT_DIR$/public/upload/Article/articleCover/20151201/1448972536640.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/upload/Article/articleCover/20151202/1449071586maxresdefault.jpg" afterPath="$PROJECT_DIR$/public/upload/Article/articleCover/20151202/1449071586maxresdefault.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/upload/Article/articleCover/20151205/144929253523c7ad345982b2b750f4628031adcbef77099b8a.jpg" afterPath="$PROJECT_DIR$/public/upload/Article/articleCover/20151205/144929253523c7ad345982b2b750f4628031adcbef77099b8a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/upload/Article/articleCover/20151205/144929986523c7ad345982b2b750f4628031adcbef77099b8a.jpg" afterPath="$PROJECT_DIR$/public/upload/Article/articleCover/20151205/144929986523c7ad345982b2b750f4628031adcbef77099b8a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/upload/Article/articleCover/20151205/144930014923c7ad345982b2b750f4628031adcbef77099b8a.jpg" afterPath="$PROJECT_DIR$/public/upload/Article/articleCover/20151205/144930014923c7ad345982b2b750f4628031adcbef77099b8a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/upload/Home/ArticleContent/20151205/144930063123c7ad345982b2b750f4628031adcbef77099b8a.jpg" afterPath="$PROJECT_DIR$/public/upload/Home/ArticleContent/20151205/144930063123c7ad345982b2b750f4628031adcbef77099b8a.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/7e9ff1d8bc7f07b708a57a364574c4ff" afterPath="$PROJECT_DIR$/storage/framework/views/7e9ff1d8bc7f07b708a57a364574c4ff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.env" afterPath="$PROJECT_DIR$/.env" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/baidu_verify_CrBAL3wrKT.html" afterPath="$PROJECT_DIR$/public/baidu_verify_CrBAL3wrKT.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/app.min.css" afterPath="$PROJECT_DIR$/public/css/app.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/googlea36f54c166187574.html" afterPath="$PROJECT_DIR$/public/googlea36f54c166187574.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/app.min.js" afterPath="$PROJECT_DIR$/public/js/app.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/holder.min.js" afterPath="$PROJECT_DIR$/public/js/holder.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/jquery.min.js" afterPath="$PROJECT_DIR$/public/js/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/sitemap.xml" afterPath="$PROJECT_DIR$/public/sitemap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/js/app.js" afterPath="$PROJECT_DIR$/resources/assets/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/assets/less/app.less" afterPath="$PROJECT_DIR$/resources/assets/less/app.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home/about/offer.blade.php" afterPath="$PROJECT_DIR$/resources/views/home/about/offer.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home/common/nav.blade.php" afterPath="$PROJECT_DIR$/resources/views/home/common/nav.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/static/css/default/common.css" afterPath="$PROJECT_DIR$/wenda/static/css/default/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/views/default/global/header.tpl.htm" afterPath="$PROJECT_DIR$/wenda/views/default/global/header.tpl.htm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/framework/views/cd99fe1743ac6d78d4dc9bbbddd398fa" afterPath="$PROJECT_DIR$/storage/framework/views/cd99fe1743ac6d78d4dc9bbbddd398fa" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/laravel.log" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/cache/b4bc05--0/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_nav_menu_list" afterPath="$PROJECT_DIR$/wenda/cache/b4bc05--0/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_nav_menu_list" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/cache/b4bc05--3/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_rqblockhtzpmfjh_group_nav_menu" afterPath="$PROJECT_DIR$/wenda/cache/b4bc05--3/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_rqblockhtzpmfjh_group_nav_menu" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/cache/b4bc05--5/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_crond_timer_minute" afterPath="$PROJECT_DIR$/wenda/cache/b4bc05--5/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_crond_timer_minute" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/cache/b4bc05--5/b4bc05---rqblockhtzpmfjh_cache_crond_timer_minute" afterPath="$PROJECT_DIR$/wenda/cache/b4bc05--5/b4bc05---rqblockhtzpmfjh_cache_crond_timer_minute" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/cache/b4bc05--6/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_admin_notifications" afterPath="$PROJECT_DIR$/wenda/cache/b4bc05--6/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_admin_notifications" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/cache/b4bc05--8/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_rqblockhtzpmfjh_group_users_group" afterPath="$PROJECT_DIR$/wenda/cache/b4bc05--8/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_rqblockhtzpmfjh_group_users_group" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/cache/b4bc05--a/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_crond_timer_half_minute" afterPath="$PROJECT_DIR$/wenda/cache/b4bc05--a/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_crond_timer_half_minute" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/cache/b4bc05--a/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_crond_timer_ten_minutes" afterPath="$PROJECT_DIR$/wenda/cache/b4bc05--a/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_crond_timer_ten_minutes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/cache/b4bc05--a/b4bc05---rqblockhtzpmfjh_cache_crond_timer_half_minute" afterPath="$PROJECT_DIR$/wenda/cache/b4bc05--a/b4bc05---rqblockhtzpmfjh_cache_crond_timer_half_minute" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/cache/b4bc05--a/b4bc05---rqblockhtzpmfjh_cache_crond_timer_ten_minutes" afterPath="$PROJECT_DIR$/wenda/cache/b4bc05--a/b4bc05---rqblockhtzpmfjh_cache_crond_timer_ten_minutes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/cache/b4bc05--b/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_crond_timer_five_minutes" afterPath="$PROJECT_DIR$/wenda/cache/b4bc05--b/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_crond_timer_five_minutes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/cache/b4bc05--b/b4bc05---rqblockhtzpmfjh_cache_crond_timer_five_minutes" afterPath="$PROJECT_DIR$/wenda/cache/b4bc05--b/b4bc05---rqblockhtzpmfjh_cache_crond_timer_five_minutes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/cache/b4bc05--e/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_reputation_calculate_start" afterPath="$PROJECT_DIR$/wenda/cache/b4bc05--e/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_reputation_calculate_start" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/cache/b4bc05--e/b4bc05---rqblockhtzpmfjh_cache_reputation_calculate_start" afterPath="$PROJECT_DIR$/wenda/cache/b4bc05--e/b4bc05---rqblockhtzpmfjh_cache_reputation_calculate_start" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wenda/cache/b4bc05--f/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_user_group_1" afterPath="$PROJECT_DIR$/wenda/cache/b4bc05--f/b4bc05---internal-metadatas---rqblockhtzpmfjh_cache_user_group_1" />
     </list>
     <ignored path="www.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,15 +43,7 @@
     <favorites_list name="www" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="logo1.png" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wenda/static/mobile/img/logo1.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -141,12 +105,12 @@
         <option value="$PROJECT_DIR$/public/vendor/editor/css/editormd.min.css" />
         <option value="$PROJECT_DIR$/resources/views/home/common/footer.blade.php" />
         <option value="$PROJECT_DIR$/resources/assets/js/app.js" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/wenda/static/css/default/common.css" />
         <option value="$PROJECT_DIR$/resources/assets/less/app.less" />
-        <option value="$PROJECT_DIR$/resources/views/home/common/nav.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/home/about/offer.blade.php" />
         <option value="$PROJECT_DIR$/wenda/views/default/global/header.tpl.htm" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/resources/views/home/common/nav.blade.php" />
       </list>
     </option>
   </component>
@@ -219,164 +183,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zy108830-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wenda" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zy108830-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wenda" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zy108830-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wenda" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zy108830-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wenda" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zy108830-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wenda" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zy108830-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wenda" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zy108830-blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wenda" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -468,7 +274,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27578124" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27578124" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32947233" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -526,13 +332,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-36.001297">
-          <caret line="3" column="21572" selection-start-line="3" selection-start-column="21572" selection-end-line="3" selection-end-column="21572" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/holder.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.037564766">
@@ -808,14 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30051813">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home/common/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36139897">
@@ -864,14 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home/common/nav.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69948184">
-          <caret line="53" column="63" selection-start-line="53" selection-start-column="63" selection-end-line="53" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/favicon.ico">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -880,6 +663,30 @@
     <entry file="file://$PROJECT_DIR$/wenda/static/mobile/img/logo1.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wenda/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37564766">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.037564766">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home/common/nav.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.8406736">
+          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
