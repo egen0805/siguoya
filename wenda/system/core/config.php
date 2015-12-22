@@ -63,7 +63,7 @@ class core_config
 
 		include_once(AWS_PATH . 'config/' . $config_id . '.php');
 
-		if (!is_array($config))
+		if (!is_array( $config ))
 		{
 			throw new Zend_Exception('Your config/' . $config_id . '.php file does not appear to contain a valid configuration array.');
 		}
