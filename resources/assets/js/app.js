@@ -12,7 +12,14 @@
                 return;
             }
             /*百度*/
-            if(location.href.indexOf('admin')<0){
+            if(
+                //管理后台
+                location.href.indexOf('admin')<0 &&
+                //本地
+                location.href.indexOf('localhost')<0 &&
+                //社区
+                location.href.indexOf('firstdomain')
+            ){
                 //百度统计代码
                 var _hmt=_hmt||[];
                 var hm=document.createElement("script");

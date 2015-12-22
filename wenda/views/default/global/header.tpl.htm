@@ -5,7 +5,7 @@
 		<div class="container">
 			<!-- logo -->
 			<div class="aw-logo hidden-xs">
-				<a href="<?php echo base_url(); ?>"></a>
+				<a href="http://localhost/"></a>
 			</div>
 			<!-- end logo -->
 			<!-- 搜索框 -->
@@ -67,10 +67,10 @@
 						<div class="dropdown-list pull-right">
 							<ul id="extensions-nav-list">
 								<?php if (check_extension_package('ticket') && get_setting('ticket_enabled') == 'Y' && ($this->user_info['permission']['publish_ticket'] || $this->user_info['permission']['is_administortar'] || $this->user_info['permission']['is_service'])) { ?>
-								<li><a href="ticket/"<?php if ($_GET['app'] == 'ticket') { ?> class="active"<?php } ?>><i class="icon icon-order"></i> <?php _e('工单'); ?></a></li>
+								<li><a href="ticket/" <?php if ($_GET['app'] == 'ticket') { ?> class="active"<?php } ?>><i class="icon icon-order"></i> <?php _e('工单'); ?></a></li>
 								<?php } ?>
 								<?php if (check_extension_package('project') && get_setting('project_enabled') == 'Y') { ?>
-								<li><a href="project/"<?php if ($_GET['app'] == 'project') { ?> class="active"<?php } ?>><i class="icon icon-activity"></i> <?php _e('活动'); ?></a></li>
+								<li><a href="project/" <?php if ($_GET['app'] == 'project') { ?> class="active"<?php } ?>><i class="icon icon-activity"></i> <?php _e('活动'); ?></a></li>
 								<?php } ?>
 							</ul>
 						</div>
@@ -92,12 +92,12 @@
 					</a>
 					<div class="aw-dropdown dropdown-list pull-right">
 						<ul class="aw-dropdown-list">
-							<li><a href="inbox/"><i class="icon icon-inbox"></i> <?php _e('私信'); ?><span class="badge badge-important hide" id="inbox_unread">0</span></a></li>
-							<li class="hidden-xs"><a href="account/setting/profile/"><i class="icon icon-setting"></i> <?php _e('设置'); ?></a></li>
+							<li><a href="inbox/" target="_blank"><i class="icon icon-inbox"></i> <?php _e('私信'); ?><span class="badge badge-important hide" id="inbox_unread">0</span></a></li>
+							<li class="hidden-xs"><a href="account/setting/profile/" target="_blank"><i class="icon icon-setting"></i> <?php _e('设置'); ?></a></li>
 							<?php if ($this->user_info['permission']['is_administortar'] OR $this->user_info['permission']['is_moderator']) { ?>
-							<li class="hidden-xs"><a href="admin/"><i class="icon icon-job"></i> <?php _e('管理'); ?></a></li>
+							<li class="hidden-xs"><a href="admin/" target="_blank"><i class="icon icon-job"></i> <?php _e('管理'); ?></a></li>
 							<?php } ?>
-							<li><a href="account/logout/"><i class="icon icon-logout"></i> <?php _e('退出'); ?></a></li>
+							<li><a href="account/logout/" target="_blank"><i class="icon icon-logout"></i> <?php _e('退出'); ?></a></li>
 						</ul>
 					</div>
 				<?php } else { ?>
@@ -110,7 +110,7 @@
 			<!-- 发起 -->
 			<?php if ($this->user_id) { ?>
 			<div class="aw-publish-btn">
-				
+
 				<a id="header_publish" class="btn-primary" <?php if (get_setting('quick_publish') == 'Y' AND $this->user_id) { ?>href="publish/"<?php } else { ?>href="publish/<?php if ($_GET['category']) { ?>category_id-<?php echo intval($_GET['category']); ?>__<?php } ?><?php if ($this->topic_info) { ?>topic_title-<?php echo urlencode($this->topic_info['topic_title']); ?>__<?php } ?>"<?php } ?><?php if (get_setting('quick_publish') == 'Y' && $this->user_id) { ?> onclick="AWS.dialog('publish', {'category_enable':'<?php echo (get_setting('category_enable') == 'Y') ? '1' : '0'; ?>', 'category_id':'<?php echo intval($_GET['category']); ?>', 'topic_title':'<?php echo $this->topic_info['topic_title']; ?>'}); return false;"<?php } ?>><i class="icon icon-ask"></i><?php _e('发起'); ?></a>
 				<div class="dropdown-list pull-right">
 					<ul>
