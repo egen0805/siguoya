@@ -378,12 +378,13 @@
                 });
                 $('#main').css({
                     marginLeft:$(window).width()*0.25
-                })
+                });
                 $('#sidebar-ul a').click(function(){
                     var href=$(this).attr('href');
                     $('html,body').animate({
                         scrollTop: $(href).offset().top-55+'px'
                     },500);
+                    $(this).addClass('active').parent().siblings().find('a').removeClass('active');
                     return false;
                 });
             }())

@@ -171,7 +171,7 @@ body{
 }
 
 #home_about_offer{
-  padding: 50px 0 !important;
+  padding: 55px 0 !important;
   overflow-x: hidden;
   background-image: none !important;
 
@@ -181,15 +181,20 @@ body{
     position: fixed;
     margin: 0;
     left: 0;
-    padding-top: 50px;
-    height: 90%;
+    height: 100%;
     background-color: #f8f8f8;
     overflow-y: hidden;
   }
   .sidebarMenu li{
     display: block;
-    height: 100px;
-    line-height: 100px;
+    height: 110px;
+    line-height: 110px;
+  }
+  .sidebarMenu li+li{
+    border-top: 1px dashed #c4e3f3;
+  }
+  .sidebarMenu a.active{
+    background-color: #eee;
   }
   .sidebarMenu a{
     display: block !important;
@@ -205,8 +210,8 @@ body{
     margin: 0;
     padding-left: 15px;
     width: 100% !important;
-    height: 150px;
-    line-height: 150px;
+    height: 110px;
+    line-height: 110px;
     background-color: #da4f4a !important;
     color: #fff;
   }

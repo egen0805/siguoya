@@ -1,0 +1,8 @@
+#博客模块
+/storage/framework/views/*
+/storage/logs/*
+
+#问答社区模块
+/wenda/tmp/*
+/wenda/uploads/*
+/.idea/*

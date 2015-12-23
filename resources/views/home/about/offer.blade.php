@@ -2,7 +2,7 @@
 @section('main')
     <div class="sidebarMenu">
             <ul id="sidebar-ul" class="nav nav-sidebar">
-                <li class="active"><a id="basicLink" href="#basicInfo" >基本信息<span class="sr-only">(current)</span></a></li>
+                <li><a id="basicLink" href="#basicInfo" class="active">基本信息<span class="sr-only">(current)</span></a></li>
                 <li><a id="skillLink" href="#skill">技能水平</a></li>
                 <li><a id="expLink"  href="#exp">工作经历</a></li>
                 <li><a id="demoLink" href="#demo">项目案例</a></li>

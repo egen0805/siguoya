@@ -1022,7 +1022,7 @@ blockquote {margin: 0 40px;padding: 0 15px;font-size: 14px;color: #777;border-le
 /* iphone横屏幕 */
 @media (max-width:736px) {
     /*公共部分*/
-    .aw-container-wrap {margin-top: 15px;}
+    .aw-container-wrap {margin-top: 0;}
 	.page-control .pagination{float: none !important;}
 	.markitup-box img {width: 100% !important;}
 	.aw-nav-tabs {padding:30px 10px 0;}
