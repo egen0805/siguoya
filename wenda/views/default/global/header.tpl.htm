@@ -4,7 +4,11 @@
 		<div class="container">
 			<!-- logo -->
 			<div class="aw-logo hidden-xs">
-				<a href="http://www.siguoya.name/"></a>
+				<?php if($_SERVER['SERVER_ADDR']=='120.24.253.51'){ ?>
+					<a href="http://www.siguoya.name/"></a>
+				<?php }else{ ?>
+					<a href="http://www.firstdomain.name/"></a>
+				<?php }?>
 			</div>
 			<!-- end logo -->
 			<!-- 搜索框 -->

@@ -13,8 +13,7 @@
 */
 
 
-if (!defined('IN_ANWSION'))
-{
+if (!defined('IN_ANWSION')){
 	die;
 }
 

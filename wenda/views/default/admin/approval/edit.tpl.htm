@@ -65,9 +65,14 @@
                                         <?php if ($attach['is_image']) { ?>
                                         <li>
                                             <input name="attachs[]" type="hidden" value="<?php echo $attach['id']; ?>" />
-
-                                            <a href="<?php echo $attach['attachment']; ?>" target="_blank" data-fancybox-group="thumb" rel="lightbox"><img src="<?php echo $attach['attachment']; ?>" class="img-polaroid" alt="<?php echo $attach['attach_name']; ?>" /></a>
-
+                                            <a href="<?php echo $attach['attachment']; ?>"
+                                                target="_blank"
+                                                data-fancybox-group="thumb"
+                                                rel="lightbox">
+                                                <img src="<?php echo $attach['attachment']; ?>"
+                                                    class="img-polaroid"
+                                                    alt="<?php echo $attach['attach_name']; ?>" />
+                                            </a>
                                             <a href="javascript:;" class="btn btn-danger" ><?php _e('删除'); ?></a>
                                         </li>
                                         <?php } ?>
