@@ -13,8 +13,8 @@ class AppServiceProvider extends ServiceProvider{
 	 */
 	public function boot(){
 		view()->share('page_title','写如诗的代码 - 思过崖');
-		view()->share('page_keyword','思过崖,曾庆权,PHP程序员,程序员博客,网站开发,问答社区');
-		view()->share('page_desc','思过崖,原名曾庆权,毕业于广州大学心理学专业,自学JavaScript/Bootstrap/ThinkPHP/Laravel/Centos,不想成为射鸡狮的文艺二B青年不是好程序猿');
+		view()->share('page_keyword','思过崖,曾庆权,JavaScript,jQuery,BootStrap,PHP,Laravel,Centos,PHP工程师,程序员博客,网站开发');
+		view()->share('page_desc','思过崖,原名曾庆权,毕业于广州大学心理学专业.放荡不羁爱编程,深信不想成为设计狮的文艺二B青年不是好程序猿.希望借助于技术博客和问答社区与各位朋友在编程上互相交流,共同进步!');
 		//body名称,用于构建less的命名空间
 		if(is_numeric(substr(\Request::path(),strlen(\Request::path())-1))){
 			view()->share('page_name','home_article_show');

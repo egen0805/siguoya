@@ -1,35 +1,35 @@
 @extends('home.common.layout')
 @section('main')
-    <div class="col-xs-3">
-        <div class="panel panel-default">
+    <div id="new_list" class="col-sm-3 col-xs-12">
+        <div id="append_new" class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">最新文章</h3>
             </div>
             @foreach($articlesNew as $article)
-            <div class="panel-body padding-none">
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="/home/{{$article->article_main_classify.'/'.$article->article_sub_classify.'/'.$article->article_id}}">
-                            <img class="img-responsive" src="{{$article->article_cover->file_url}}" alt="{{$article->article_title}}封面">
-                        </a>
-                        <p class="text-center">
+                <div class="panel-body padding-none">
+                    <ul class="list-unstyled">
+                        <li>
                             <a href="/home/{{$article->article_main_classify.'/'.$article->article_sub_classify.'/'.$article->article_id}}">
-                                {{$article->article_title}}
+                                <img class="img-responsive" src="{{$article->article_cover->file_url}}" alt="{{$article->article_title}}封面">
                             </a>
-                        </p>
-                    </li>
-                </ul>
-            </div>
+                            <p class="text-center">
+                                <a href="/home/{{$article->article_main_classify.'/'.$article->article_sub_classify.'/'.$article->article_id}}">
+                                    {{$article->article_title}}
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             @endforeach
         </div>
     </div>
-    <div class="col-xs-6">
+    <div id="hot_list" class="col-xs-6 hidden-xs">
         <div id="hotArticle" class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">最热文章</h3>
             </div>
             <div class="panel-body panel-body-hot">
-                <ul class="list-unstyled">
+                <ul id="append_hot" class="list-unstyled">
                     @foreach($articlesHot as $article)
                         <li class="li-hot">
                             <blockquote class="text-danger">
@@ -49,7 +49,7 @@
             </div>
         </div>
     </div>
-    <div class="col-xs-3">
+    <div id="other_list" class="col-xs-3 hidden-xs">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">程序员翻墙必备</h3>
@@ -85,10 +85,10 @@
                 <div class="list-group">
                     <a href="#" class="list-group-item">
                         <h5 class="list-group-item-heading">
-                            国内最好的阿里云服务器
+                            使用国内最好的阿里云服务器
                         </h5>
                         <p class="list-group-item-text">
-                            最流行的LNMP开发环境
+                            基于最流行的LNMP开发环境
                         </p>
                     </a>
                     <a href="#" class="list-group-item">
@@ -107,14 +107,14 @@
             </div>
         </div>
         <div class="panel panel-default">
-        	  <div class="panel-heading">
-        			<h3 class="panel-title">友情链接</h3>
-        	  </div>
-        	  <div class="panel-body">
-        			<ul class="list-unstyled">
-                        <li><a href="http://irudder.me/wpblog/">艾文逗</a></li>
-                    </ul>
-        	  </div>
+            <div class="panel-heading">
+                <h3 class="panel-title">友情链接</h3>
+            </div>
+            <div class="panel-body">
+                <ul class="list-unstyled">
+                    <li><a href="http://irudder.me/wpblog/">艾文逗</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 @endsection

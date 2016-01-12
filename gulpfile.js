@@ -17,8 +17,8 @@ var pngquant = require('imagemin-pngquant');
 
 elixir(function(mix) {
     //common
-    mix.less('app.less','public/css/app.min.css');
-    mix.scripts('app.js','public/js/app.min.js');
+    mix.less('siguoya.less','public/css/siguoya.min.css');
+    mix.scripts('siguoya.js','public/js/siguoya.min.js');
 });
 
 gulp.task('img',function(){

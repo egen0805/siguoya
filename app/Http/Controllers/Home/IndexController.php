@@ -6,27 +6,48 @@ use App\ArticleClassify;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\common\Controller;
+/**
+ * Class IndexController
+ * @package App\Http\Controllers\Home
+ */
 class IndexController extends Controller{
-	/**
-	 * Display a listing of the resource.
-	 * @return \Illuminate\Http\Response
+
+
+	/**默认的控制器的默认方法
+	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
 	 */
 	public function index(){
+		//导航列表
 		$articleClassifyModel=new ArticleClassify();
-		$articleModel=new Article();
-		//分类
 		$articleClassify=ArticleClassify::getAllParentClassify()->toArray();
 		foreach($articleClassify as $key=>$value){
 			$articleClassify[$key]['sub_classify']=$articleClassifyModel->getClassifyByPid($value['classify_id'])
 				->toArray();
 		}
-		//最新文章
-		$articlesNew=$articleModel->getTenNewArticle();
-
-		//最热文章
-		$articlesHot=$articleModel->getTenHotArticle();
-
+		//最新文章与最热文章
+		$articleModel=new Article();
+		$articlesNew=$articleModel->getArticlesList('new');
+		$articlesHot=$articleModel->getArticlesList('hot');
 		return view('home.index.index',compact('articleClassify','articlesNew','articlesHot'));
+	}
+
+	/**
+	 * Ajax请求,刷新获取文章列表,每次多增加5条
+	 */
+	public function ajaxarticlelist(){
+		//从第几条开始以及排序问题
+		$articleModel=new Article();
+		$data=\Request::all();
+		$start=$data['start'];
+		$type=$data['type'];
+		if($type=='new'){
+			$articlesNew=$articleModel->getArticlesList($type,$start);
+			return view('home.index.tplnew',compact('articlesNew'));
+		}else{
+			$articlesHot=$articleModel->getArticlesList($type,$start);
+			return view('home.index.tplhot',compact('articlesHot'));
+		}
+
 	}
 
 	/**

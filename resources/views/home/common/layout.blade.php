@@ -9,26 +9,34 @@
     <meta name="description" content="{{preg_match('/\d/',Request::url())?$article->article_summary:$page_desc}}">
     <!--使360浏览器通过webkit内核采用极速模式渲染页面-->
     <meta name="renderer" content="webkit">
+    <!--响应式,等比例缩放页面-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--用于Ajax,防止跨站攻击-->
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <!--CSS Start-->
     <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/vendor/editor/css/editormd.min.css" />
-    <!--自定义CSS-->
+    <link rel="stylesheet" href="/css/siguoya.min.css" />
     @yield('css')
     <!--CSS End-->
-    <link rel="stylesheet" href="/css/app.min.css" />
-    <!--JS-->
+    <!--JS Start-->
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/vendor/editor/editormd.min.js"></script>
     <script type="text/javascript" src="/vendor/editor/lib/marked.min.js"></script>
     <script type="text/javascript" src="/vendor/editor/lib/prettify.min.js"></script>
     <script type="text/javascript" src="/js/holder.min.js"></script>
-    <!--自定义JS-->
+    <!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+    <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/js/siguoya.min.js"></script>
     @yield('js')
     <!--JS End-->
-    <script type="text/javascript" src="/js/app.min.js"></script>
 </head>
-<body id="{{$page_name}}">
+<body id="{{$page_name}}" data-token="{{ csrf_token() }}">
     <div id="header">
         @include('home.common.nav')
     </div>

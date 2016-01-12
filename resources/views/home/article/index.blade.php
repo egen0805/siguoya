@@ -8,7 +8,7 @@
 @section('main')
     <div class="row">
         @foreach($articleList as $article)
-            <div class="col-xs-4">
+            <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-body ">
                       <a href="{{ Request::url().'/'.$article->article_id }}">

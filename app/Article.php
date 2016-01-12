@@ -17,12 +17,12 @@ class Article extends Model{
 			'article_origin_url'
 	];
 
-	public function getTenNewArticle(){
-		return Article::orderBy('created_at','desc')->get();
-	}
-
-	public function getTenHotArticle(){
-		return Article::orderBy('article_view_count','desc')->get();
+	public function getArticlesList($type,$start=0){
+		if($type=='new'){
+			return Article::orderBy('created_at','desc')->skip($start)->take(10)->get();
+		}else{
+			return Article::orderBy('article_view_count','desc')->skip($start)->take(10)->get();
+		}
 	}
 
 	public function getArticleCoverAttribute($value){
@@ -40,6 +40,7 @@ class Article extends Model{
 	public function getArticleOriginUrlAttribute($value){
 		return json_decode($value);
 	}
+
 
 	public function getCreatedAtAttribute($value){
 		return substr($value,0,10);

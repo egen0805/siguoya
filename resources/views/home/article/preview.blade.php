@@ -8,7 +8,6 @@
 @section('main')
     <div class="row">
         <div class="col-xs-12">
-
             <div class="alert alert-info">
                 <a href="#" class="close" data-dismiss="alert">
                     &times;

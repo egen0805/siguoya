@@ -14,7 +14,7 @@ class ArticleController extends Controller{
 	}
 
 	/**
-	 * 显示文章封面
+	 * 输出系列文章的列表
 	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
 	 */
 	public function index(){

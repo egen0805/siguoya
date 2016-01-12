@@ -1,5 +1,5 @@
 #博客模块
-/storage/framework/views/*
+/storage/framework/*
 /storage/logs/*
 /resources/assets/*
 

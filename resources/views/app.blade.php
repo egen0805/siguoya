@@ -45,8 +45,7 @@
     </div>
 </nav>
 @yield('content')
-        <!-- Scripts -->
-<script src="/js/common/jquery.min.js"></script>
+<script src="/js/jquery.min.js"></script>
 <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
