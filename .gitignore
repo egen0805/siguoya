@@ -2,6 +2,7 @@
 /storage/framework/*
 /storage/logs/*
 /resources/assets/*
+/public/upload/*
 
 #问答社区模块
 /wenda/uploads/*

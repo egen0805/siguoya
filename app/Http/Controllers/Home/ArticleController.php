@@ -61,11 +61,15 @@ class ArticleController extends Controller{
 	 * @return int
 	 */
 	public function arithmetic(){
+		//http://www.firstdomain.name/home/arithmetic/javascript/datahandler/
+		//$argsArr=[home,arithmetic,javascript,datahandler]
+		//$tagOne=javascript
+		//$tagOther=datahandler
 		$argsArr=explode('/',\Request::path());
-		$mainClassifyId=ArticleClassify::getClassifyId($argsArr[count($argsArr)-2]);
-		$tag=$argsArr[count($argsArr)-1];
-		$articleList=Article::where('article_tags','like',"%$tag%")
-				->where('article_sub_classify','=',$mainClassifyId)->get();
+		$tagOne=$argsArr[count($argsArr)-1];
+		$tagOther=$argsArr[count($argsArr)-2];
+		$articleList=Article::where('article_tags','like',"%$tagOne%")
+				->where('article_tags','like',"%$tagOther%")->get();
 		return view('home.article.list',compact('articleList'));
 	}
 
