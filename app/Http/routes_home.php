@@ -29,8 +29,8 @@ Route::group(['namespace'=>'Home'],function(){
 	Route::get('/home/arithmetic/javascript/dataorder','ArticleController@arithmetic');
 	Route::get('/home/arithmetic/javascript/datacode','ArticleController@arithmetic');
 	Route::get('/home/arithmetic/javascript',function(){return view('home.article.preview');});
-	Route::get('/home/arithmetic/javascript/{articlelist}','ArticleController@articlelist');
 	Route::get('/home/arithmetic/javascript/{articlelist}/{id}','ArticleController@show');
+	Route::get('/home/arithmetic/javascript/{articlelist}','ArticleController@articlelist');
 	/**
 	 * 常规请求
 	 */

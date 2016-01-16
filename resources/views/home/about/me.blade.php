@@ -39,7 +39,7 @@
                     <li>两年工作经验,JS+PHP+Linux,自嘲全栈攻城狮</li>
                     <li>从博客项目到CMS项目,从电商项目到SNS项目</li>
                     <li>两个商业性网站,三台阿里云服务器的运营与维护</li>
-                    <li>期望地点:<span class="text-danger">广州/深圳</span>,月薪<span class="text-danger">10K</span></li>
+                    <li>不断追求卓越,渴望做得更好!</li>
                 </p>
                 {{--<p>--}}
                     {{--<a class="btn btn-default" href="/home/about/career">求得一知己 &raquo;</a>--}}
