@@ -20,7 +20,9 @@ class ArticleController extends Controller{
 	public function index(){
 		$mainClassify=ArticleClassify::getClassifyId($this->urlArray[count($this->urlArray)-2]);
 		$subClassify=ArticleClassify::getClassifyId($this->urlArray[count($this->urlArray)-1]);
-		$articleList=Article::whereArticleMainClassifyAndArticleSubClassify($mainClassify,$subClassify)->get();
+		$articleList=Article::whereArticleMainClassifyAndArticleSubClassify($mainClassify,$subClassify)
+				->where('article_tags','=','')->get();
+//		dd($articleList);
 		return view('home.article.index',compact('articleList'));
 	}
 
@@ -81,5 +83,10 @@ class ArticleController extends Controller{
 		$articleList=Article::where('article_tags','like',"%phpstorm%")
 				->get();
 		return view('home.article.index',compact('articleList'));
+	}
+
+	public function jquerysource(){
+		$articleList=Article::where('article_tags','like',"%jquerysource%")->orderBy('created_at','ASC')->get();
+		return view('home.article.jquerysource',compact('articleList'));
 	}
 }

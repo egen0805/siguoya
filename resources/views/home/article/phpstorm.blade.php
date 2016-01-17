@@ -20,10 +20,12 @@
                 </div>
                 <div class="col-xs-3">
                     <p class="text-center">
-                        <button class="btn btn-lg btn-info btn-info-empty redirectLessons">立刻玩转PhpStorm</button>
+                        {{--<button class="btn btn-lg btn-info btn-info-empty redirectLessons">立刻玩转PhpStorm</button>--}}
                     </p>
                     <p class="text-center">
-                        <a href="https://www.jetbrains.com/phpstorm/">PhpStorm软件下载</a>
+                        <button class="btn btn-lg btn-info btn-info-empty redirectLessons">
+                            PhpStorm软件下载
+                        </button>
                     </p>
                 </div>
             </div>
@@ -61,7 +63,7 @@
                     </div>
                 </div>
             </div>
-            <button id="redirectLessons" class="btn btn-primary btn-block redirectLessons">PhpStorm, 约吗?</button>
+            {{--<button id="redirectLessons" class="btn btn-primary btn-block redirectLessons">PhpStorm, 约吗?</button>--}}
             <div id="phpstorm_intro" class="row">
                 <div class="col-xs-6">
                     <div class="panel panel-default">
@@ -163,7 +165,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn btn-primary btn-block redirectLessons">开启PhpStorm振奋人心之旅</button>
+            {{--<button class="btn btn-primary btn-block redirectLessons">开启PhpStorm振奋人心之旅</button>--}}
         </div>
     </div>
 @endsection

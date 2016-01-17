@@ -19,9 +19,9 @@ class Article extends Model{
 
 	public function getArticlesList($type,$start=0){
 		if($type=='new'){
-			return Article::orderBy('created_at','desc')->skip($start)->take(10)->get();
+			return Article::orderBy('created_at','desc')->where('article_tags','=','')->skip($start)->take(10)->get();
 		}else{
-			return Article::orderBy('article_view_count','desc')->skip($start)->take(10)->get();
+			return Article::orderBy('article_view_count','desc')->where('article_tags','=','')->skip($start)->take(10)->get();
 		}
 	}
 
