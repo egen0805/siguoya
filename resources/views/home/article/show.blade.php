@@ -22,29 +22,31 @@
                 @endif
             </div>
         </div>
-        <div class="hidden-xs col-sm-3">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">相关推荐</h3>
-                </div>
-                @foreach($referArticleList as $art)
-                    <div class="panel-body padding-none">
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="/home/{{$art->article_main_classify.'/'.$art->article_sub_classify.'/'.$art->article_id}}">
-                                    <img class="img-responsive" src="{{$art->article_cover->file_url}}" alt="{{$art->article_title}}封面">
-                                </a>
-                                <p class="text-center">
-                                    <a href="/home/{{$art->article_main_classify.'/'.$art->article_sub_classify.'/'.$art->article_id}}">
-                                        {{$art->article_title}}
-                                    </a>
-                                </p>
-                            </li>
-                        </ul>
+        @if(!empty($referArticleList))
+            <div class="hidden-xs col-sm-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">相关推荐</h3>
                     </div>
-                @endforeach
+                    @foreach($referArticleList as $art)
+                        <div class="panel-body padding-none">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="/home/{{$art->article_main_classify.'/'.$art->article_sub_classify.'/'.$art->article_id}}">
+                                        <img class="img-responsive" src="{{$art->article_cover->file_url}}" alt="{{$art->article_title}}封面">
+                                    </a>
+                                    <p class="text-center">
+                                        <a href="/home/{{$art->article_main_classify.'/'.$art->article_sub_classify.'/'.$art->article_id}}">
+                                            {{$art->article_title}}
+                                        </a>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    @endforeach
+                </div>
             </div>
-        </div>
+        @endif
     </div>
     <div class="row">
         <textarea class="hidden" name="" id="mdContainer" cols="30" rows="10">{{$article->article_content}}</textarea>
