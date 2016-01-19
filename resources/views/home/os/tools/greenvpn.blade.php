@@ -1,6 +1,6 @@
 @extends('home.common.layout')
 @section('main')
-    <div class="col-xs-8">
+    <div class="col-xs-12 col-sm-8">
         <a target="_blank" href="http://gjsq.me/924568"><img class="img-responsive" src="/img/common/product/greenvpn/head.png" alt="greenvpn"></a>
         <div class="well text-info"><a target="_blank" href="http://gjsq.me/924568">greenvpn</a>是老牌vpn提供商，新注册用户有200M免费流量</div>
         <blockquote>一、注册</blockquote>
@@ -37,7 +37,7 @@
         <pre class="text-danger">python chnroutes.py -p mac</pre>
         </p><p>将这两个文件移入/etc/ppp/，且需要通过chmod的方式使其具有可执行的权限，一切就绪之后重新连接VPN即可</p>
     </div>
-    <div class="col-xs-4">
+    <div class="col-xs-12 col-sm-4">
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">为什么要使用VPN</h3>
