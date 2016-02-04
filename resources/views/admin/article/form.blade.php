@@ -14,8 +14,8 @@
 </div>
 <div class="form-group">
     <?=Form::label('articleTitle','文章封面') ?>
-    <?=Form::hidden('articleCover',is_null($article->article_cover)?'':$article->article_cover->file_url,['id'=>'articleCover'])?>
-    <img src="{{is_null($article->article_cover)?'':$article->article_cover->file_url}}" id="coverPreview"
+    <?=Form::hidden('articleCover',isset($article)?($article->article_cover?$article->article_cover->file_url:''):'',['id'=>'articleCover'])?>
+    <img src="{{isset($article)?($article->article_cover?$article->article_cover->file_url:''):''}}" id="coverPreview"
             class="img-responsive img-list-cover"
             data-src="holder.js/320x180?theme=sky"
             alt="文章配图">
