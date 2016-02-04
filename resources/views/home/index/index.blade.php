@@ -52,6 +52,17 @@
     <div id="other_list" class="col-xs-3 hidden-xs">
         <div class="panel panel-default">
             <div class="panel-heading">
+                <h3 class="panel-title">写代码这么好玩的事还能挣钱</h3>
+            </div>
+            <div class="panel-body padding-none">
+                <embed width="100%" height="200px" src="http://player.youku.com/player.php/sid/XMTQ0OTUxNjc5Ng==/v.swf" allowFullScreen="true" quality="high"  align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+            </div>
+            <div class="panel-footer">
+                <span class="text-info">我爱这个世界~~siguoya.name</span>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
                 <h3 class="panel-title">程序员翻墙必备</h3>
             </div>
             <div class="panel-body padding-none">
