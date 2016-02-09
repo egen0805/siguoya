@@ -10,7 +10,7 @@
 /**
  * resource()方法生成的store路由,通过php artisan route:list查看是可以接受post请求的
  * 但是使用Ajax通过post请求提交表单会报405错误
- * 通过Chrome浏览器的Response Headers里面的allow字段,可以查看具体能接受的请求方法
+ * 通过Chrome浏览器的Re锕dminsponse Headers里面的allow字段,可以查看具体能接受的请求方法
  */
 Route::group(['namespace'=>'Admin','middleware'=>['auth']],function(){
 	Route::get('/admin/','IndexController@index');

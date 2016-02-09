@@ -5,6 +5,7 @@
     		<tr>
     			<th>文章ID</th>
     			<th>文章名称</th>
+    			<th>文章标签</th>
     			<th>文章浏览量</th>
     			<th>文章处理</th>
     		</tr>
@@ -14,6 +15,7 @@
 				<tr>
 					<td>{{$article->article_id}}</td>
 					<td><a href="/home/{{$article->article_main_classify.'/'.$article->article_sub_classify.'/'.$article->article_id}}">{{$article->article_title}}</a></td>
+					<td>{{$article->article_tags}}</td>
 					<td>{{$article->article_view_count}}</td>
 					<td>
 						<div class="btn-group">

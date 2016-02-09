@@ -3,7 +3,7 @@
     <div class="jumbotron">
         <h1>字如其人,代码如诗</h1>
         <p class="lead">
-            不想成为射鸡狮的文艺二B青年不是好程序猿
+            不想成为设计狮的文艺二B青年不是好程序猿
         </p>
         <p><a class="btn btn-lg btn-success-empty" href="#">一生放荡不羁爱编程</a></p>
     </div>

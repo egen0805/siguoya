@@ -51,11 +51,21 @@ class ArticleClassify extends Model{
 	}
 
 	/**
-	 * 根据ID获取分类名称
+	 * 根据分类ID获取分类名称
 	 * @param $classify_id
 	 * @return mixed
 	 */
 	public static function getClassifyName($classify_id){
+		$objArray=ArticleClassify::take(1)->select('classify_name')->where('classify_id','=',$classify_id)->get();
+		return $objArray[0]['classify_name'];
+	}
+
+	/**
+	 * 根据分类ID获取分类别名
+	 * @param $classify_id
+	 * @return mixed
+	 */
+	public static function getClassifyAlias($classify_id){
 		$objArray=ArticleClassify::take(1)->select('classify_alias')->where('classify_id','=',$classify_id)->get();
 		return $objArray[0]['classify_alias'];
 	}

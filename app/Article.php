@@ -65,7 +65,7 @@ class Article extends Model{
 	 * @return mixed
 	 */
 	public function getArticleMainClassifyAttribute($value){
-		return ArticleClassify::getClassifyName($value);
+		return ArticleClassify::getClassifyAlias($value);
 	}
 
 	/**
@@ -74,7 +74,7 @@ class Article extends Model{
 	 * @return mixed
 	 */
 	public function getArticleSubClassifyAttribute($value){
-		return ArticleClassify::getClassifyName($value);
+		return ArticleClassify::getClassifyAlias($value);
 	}
 
 	/**
