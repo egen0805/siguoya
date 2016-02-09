@@ -32,11 +32,11 @@
                         <div class="panel-body padding-none">
                             <ul class="list-unstyled">
                                 <li>
-                                    <a href="/home/{{$art->article_main_classify.'/'.$art->article_sub_classify.'/'.$art->article_id}}">
+                                    <a href="{{'/home/article/'.$art->article_id}}">
                                         <img class="img-responsive" src="{{$art->article_cover->file_url}}" alt="{{$art->article_title}}封面">
                                     </a>
                                     <p class="text-center">
-                                        <a href="/home/{{$art->article_main_classify.'/'.$art->article_sub_classify.'/'.$art->article_id}}">
+                                        <a href="{{'/home/article/'.$art->article_id}}">
                                             {{$art->article_title}}
                                         </a>
                                     </p>

@@ -2,11 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>{{preg_match('/\d/',Request::url())?$article->article_title.' - 思过崖':$page_title}}</title>
+    <title>{{preg_match('/series\/\d/',Request::url())?$series->series_name:(isset($article)?$article->article_title.' - 思过崖':$page_title)}}</title>
     <!--关键字-->
-    <meta name="keywords" content="{{preg_match('/\d/',Request::url())?$article->article_keywords:$page_keyword}}">
+    <meta name="keywords" content="{{preg_match('/series\/\d/',Request::url())?$series->series_name:(isset($article)?$article->article_keywords.' - 思过崖':$page_keyword)}}">
     <!--页面描述-->
-    <meta name="description" content="{{preg_match('/\d/',Request::url())?$article->article_summary:$page_desc}}">
+    <meta name="description" content="{{preg_match('/series\/\d/',Request::url())?$series->series_name:(isset($article)?$article->article_summary.' - 思过崖':$page_desc)}}">
     <!--使360浏览器通过webkit内核采用极速模式渲染页面-->
     <meta name="renderer" content="webkit">
     <!--响应式,等比例缩放页面-->

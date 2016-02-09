@@ -19,6 +19,13 @@
                             <li><a href="{{url('admin/article/create')}}">文章发布</a></li>
                         </ul>
                     </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">系列管理<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{url('admin/series')}}">查看系列</a></li>
+                            <li><a href="{{url('admin/series/create')}}">增加系列</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">

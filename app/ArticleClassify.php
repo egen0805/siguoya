@@ -40,6 +40,17 @@ class ArticleClassify extends Model{
 	}
 
 	/**
+	 * 获取分类ID与分类名称的键值对
+	 * @param $pid 父分类ID
+	 * @return mixed
+	 */
+	public static function getClassifyList($pid){
+		$classifyList=ArticleClassify::where('classify_parent_id','=',$pid)->lists('classify_name','classify_id')
+				->toArray();
+		return $classifyList;
+	}
+
+	/**
 	 * 根据ID获取分类名称
 	 * @param $classify_id
 	 * @return mixed

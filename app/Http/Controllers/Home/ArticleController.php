@@ -3,6 +3,7 @@ namespace App\Http\Controllers\Home;
 
 use App\Article;
 use App\ArticleClassify;
+use App\ArticleSeries;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Common\Controller;
@@ -20,10 +21,11 @@ class ArticleController extends Controller{
 	public function index(){
 		$mainClassify=ArticleClassify::getClassifyId($this->urlArray[count($this->urlArray)-2]);
 		$subClassify=ArticleClassify::getClassifyId($this->urlArray[count($this->urlArray)-1]);
-		$articleList=Article::whereArticleMainClassifyAndArticleSubClassify($mainClassify,$subClassify)
-				->where('article_tags','=','')->get();
-//		dd($articleList);
-		return view('home.article.index',compact('articleList'));
+		//获取专题列表
+		$seriesList=ArticleSeries::getSeriesByClassify($mainClassify,$subClassify);
+		//获取文章列表
+		$articleList=Article::getArticleByClassify($mainClassify,$subClassify);
+		return view('home.article.index',compact('seriesList','articleList'));
 	}
 
 	/**

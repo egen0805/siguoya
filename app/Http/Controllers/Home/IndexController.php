@@ -26,8 +26,8 @@ class IndexController extends Controller{
 		}
 		//最新文章与最热文章
 		$articleModel=new Article();
-		$articlesNew=$articleModel->getArticlesList('new');
-		$articlesHot=$articleModel->getArticlesList('hot');
+		$articlesNew=Article::getNewOrHotArticle('new');
+		$articlesHot=Article::getNewOrHotArticle('hot');
 		return view('home.index.index',compact('articleClassify','articlesNew','articlesHot'));
 	}
 
@@ -41,10 +41,10 @@ class IndexController extends Controller{
 		$start=$data['start'];
 		$type=$data['type'];
 		if($type=='new'){
-			$articlesNew=$articleModel->getArticlesList($type,$start);
+			$articlesNew=Article::getNewOrHotArticle($type,$start);
 			return view('home.index.tplnew',compact('articlesNew'));
 		}else{
-			$articlesHot=$articleModel->getArticlesList($type,$start);
+			$articlesHot=Article::getNewOrHotArticle($type,$start);
 			return view('home.index.tplhot',compact('articlesHot'));
 		}
 

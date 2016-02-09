@@ -36,12 +36,14 @@ Route::group(['namespace'=>'Home'],function(){
 	//jQuery源码
 	Route::get('/home/frontend/jquerysource','ArticleController@jquerysource');
 	Route::get('/home/frontend/jquerysource/{id}','ArticleController@show');
-
 	/**
 	 * 常规请求
 	 */
 	Route::post('/home/index/ajaxarticlelist','IndexController@ajaxarticlelist');
+	Route::resource('/home/series','SeriesController');
+	Route::resource('/home/article','ArticleController');
 	Route::get('/home/{classify_main}/{classify_sub}','ArticleController@index');
+	// TODO 之前的链接形式,待百度收录新的之后可以再删除
 	Route::get('/home/{classify_main}/{classify_sub}/{id}','ArticleController@show');
 	//默认路由
 	Route::get('/home','IndexController@index');
