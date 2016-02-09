@@ -7,4 +7,5 @@
 #问答社区模块
 /wenda/uploads/*
 /wenda/cache/*
+/wenda/tmp/*
 /.idea/*

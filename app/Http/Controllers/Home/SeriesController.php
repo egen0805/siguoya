@@ -38,7 +38,7 @@ class SeriesController extends Controller{
 	 */
 	public function show($id){
 		$series=ArticleSeries::find($id);
-		$series['articleList']=Article::getSeriesArticle($series->series_name);
+		$series['articleList']=Article::getSeriesArticle($series->series_alias);
 		return view('home.series.show',compact('series'));
 	}
 

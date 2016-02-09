@@ -15,6 +15,7 @@ class CreateArticleSeriesTable extends Migration
         Schema::create('article_series', function (Blueprint $table) {
             $table->increments('series_id');
             $table->string('series_name');
+            $table->string('series_alias');
             $table->string('series_cover');
             $table->tinyInteger('series_main_classify');
             $table->tinyInteger('series_sub_classify');

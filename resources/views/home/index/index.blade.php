@@ -9,11 +9,11 @@
                 <div class="panel-body padding-none">
                     <ul class="list-unstyled">
                         <li>
-                            <a href="/home/{{$article->article_main_classify.'/'.$article->article_sub_classify.'/'.$article->article_id}}">
+                            <a href="{{'/home/article/'.$article->article_id}}">
                                 <img class="img-responsive" src="{{$article->article_cover->file_url}}" alt="{{$article->article_title}}封面">
                             </a>
                             <p class="text-center">
-                                <a href="/home/{{$article->article_main_classify.'/'.$article->article_sub_classify.'/'.$article->article_id}}">
+                                <a href="{{'/home/article/'.$article->article_id}}">
                                     {{$article->article_title}}
                                 </a>
                             </p>
@@ -33,10 +33,10 @@
                     @foreach($articlesHot as $article)
                         <li class="li-hot">
                             <blockquote class="text-danger">
-                                <a href="/home/{{$article->article_main_classify.'/'.$article->article_sub_classify.'/'.$article->article_id}}" target="_blank">{{$article->article_title}}</a>
+                                <a href="{{'/home/article/'.$article->article_id}}" target="_blank">{{$article->article_title}}</a>
                             </blockquote>
                             <div class="img-out">
-                                <a href="/home/{{$article->article_main_classify.'/'.$article->article_sub_classify.'/'.$article->article_id}}" target="_blank">
+                                <a href="{{'/home/article/'.$article->article_id}}" target="_blank">
                                     <img class="img-responsive img-hot pull-left" src="{{$article->article_cover->file_url}}" alt="文章图片">
                                 </a>
                             </div>

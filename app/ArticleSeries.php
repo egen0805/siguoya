@@ -11,6 +11,7 @@ class ArticleSeries extends Model
 	protected $fillable=[
 		'series_id',
 		'series_name',
+		'series_alias',
 		'series_cover',
 		'series_main_classify',
 		'series_sub_classify',

@@ -16,7 +16,7 @@
                         </a>
                     </div>
                     <div class="panel-footer">
-                        <a href="{{ '/home/series/'.$series->series_id }}">[系列文章]{{ $series->series_name }}</a>
+                        <a class="text-danger" href="{{ '/home/series/'.$series->series_id }}">[系列文章]{{ $series->series_name }}</a>
                     </div>
                 </div>
             </div>

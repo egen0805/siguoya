@@ -5,6 +5,10 @@
     <input type="text" class="form-control" name="seriesName" value="{{isset($series)?$series->series_name:''}}" id="seriesName" placeholder="系列名称...">
 </div>
 <div class="form-group">
+    <label for="seriesName">系列名称</label>
+    <input type="text" class="form-control" name="seriesName" value="{{isset($series)?$series->series_alias:''}}" id="seriesAlias" placeholder="系列别名...">
+</div>
+<div class="form-group">
     <?=Form::label('seriesCover','系列封面') ?>
     <?=Form::hidden('seriesCover',isset($series)?($series->series_cover?$series->series_cover->file_url:''):'',['id'=>'seriesCover'])?>
     <img src="{{isset($series)?($series->series_cover?$series->series_cover->file_url:''):''}}" id="coverPreview"
