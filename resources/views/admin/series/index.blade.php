@@ -5,10 +5,10 @@
             <div class="col-xs-4">
                 <div class="panel panel-default">
                     <div class="panel-body">
-                        <img class="img-responsive" src="{{$series->series_cover->file_url}}" alt="系列封面" data-src="holder.js/320x180?theme=sky">
+                        <img title="{{$series->series_main_classify.'>'.$series->series_sub_classify.'>'.$series->series_alias}}" class="img-responsive" src="{{$series->series_cover->file_url}}" alt="系列封面" data-src="holder.js/320x180?theme=sky">
                     </div>
                     <div class="panel-body">
-                        {{$series->series_main_classify.'>'.$series->series_main_classify.'>'.$series->series_name}}
+                        {{$series->series_name}}
                         <div class="text-right">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-danger">删除</button>

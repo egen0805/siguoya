@@ -55,8 +55,7 @@ class ArticleController extends Controller{
 		$article->article_view_count+=1;
 		$article->save();
 		$classifyId=ArticleClassify::getClassifyId($article->article_sub_classify);
-		$referArticleList=Article::take(8)->where('article_sub_classify','=',$classifyId)
-				->where('article_id','!=',$article->article_id)->get();
+		$referArticleList=Article::getReferArticleList($classifyId,$article->article_id);
 		return view('home.article.show',compact('article','referArticleList'));
 	}
 

@@ -43,6 +43,18 @@ class Article extends Model{
 	}
 
 	/**
+	 * 获取相关文章
+	 * @param $subClassify
+	 * @param $articleId
+	 * @return mixed
+	 */
+	public static function getReferArticleList($subClassify,$articleId){
+		return Article::where('article_sub_classify','=',$subClassify)
+				->where('article_id','!=',$articleId)
+				->where('article_tags','=','')->get();
+	}
+
+	/**
 	 * 获取系列文章
 	 * @param string $articleTag
 	 * @return mixed
