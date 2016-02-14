@@ -50,18 +50,18 @@
         </div>
     </div>
     <div id="other_list" class="col-xs-3 hidden-xs">
-        <div class="panel panel-default">
+        <div class="panel panel-warning">
             <div class="panel-heading">
-                <h3 class="panel-title">写代码这么好玩的事还能挣钱</h3>
+                <h3 class="panel-title">我爱这个世界</h3>
             </div>
             <div class="panel-body padding-none">
                 <embed width="100%" height="200px" src="http://player.youku.com/player.php/sid/XMTQ0OTUxNjc5Ng==/v.swf" allowFullScreen="true" quality="high"  align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
             </div>
             <div class="panel-footer">
-                <span class="text-info">我爱这个世界~~siguoya.name</span>
+                <span class="text-info">写代码这么好玩的事还能挣钱~~</span>
             </div>
         </div>
-        <div class="panel panel-default">
+        <div class="panel panel-danger">
             <div class="panel-heading">
                 <h3 class="panel-title">程序员翻墙必备</h3>
             </div>
@@ -72,18 +72,7 @@
                 <span class="text-info">程序员的梦想应该是星辰大海</span>
             </div>
         </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">扫我! 扫我!</h3>
-            </div>
-            <div class="panel-body padding-none">
-                <a href="/home/about/me" target="_blank"><img src="/img/home/index/weixin.jpg" class="img-responsive" alt="个人二维码"></a>
-            </div>
-            <div class="panel-footer">
-                <span class="text-info">闷骚的二维码颜色,做爱做的事情</span>
-            </div>
-        </div>
-        <div class="panel panel-default panel-list-group">
+        <div class="panel panel-info panel-list-group">
             <div class="panel panel-heading">
                 <h3 class="panel-title">提供网站免费搭建服务</h3>
             </div>
@@ -115,6 +104,38 @@
                         <p class="list-group-item-text">运维交给我,您只管安心地去运营</p>
                     </a>
                 </div>
+            </div>
+        </div>
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">系列文章</h3>
+            </div>
+            @foreach($seriesArticle as $series)
+                <div class="panel-body padding-none">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="{{'/home/series/'.$series->series_id}}">
+                                <img class="img-responsive" src="{{$series->series_cover->file_url}}" alt="{{$series->series_name}}封面">
+                            </a>
+                            <p class="text-center">
+                                <a href="{{'/home/series/'.$series->series_id}}">
+                                    {{$series->series_name}}
+                                </a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            @endforeach
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">扫我! 扫我!</h3>
+            </div>
+            <div class="panel-body padding-none">
+                <a href="/home/about/me" target="_blank"><img src="/img/home/index/weixin.jpg" class="img-responsive" alt="个人二维码"></a>
+            </div>
+            <div class="panel-footer">
+                <span class="text-info">闷骚的二维码颜色,做爱做的事情</span>
             </div>
         </div>
         <div class="panel panel-default">

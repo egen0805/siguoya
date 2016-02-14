@@ -3,6 +3,7 @@ namespace App\Http\Controllers\Home;
 
 use App\Article;
 use App\ArticleClassify;
+use App\ArticleSeries;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\common\Controller;
@@ -24,11 +25,12 @@ class IndexController extends Controller{
 			$articleClassify[$key]['sub_classify']=$articleClassifyModel->getClassifyByPid($value['classify_id'])
 				->toArray();
 		}
+		//系列文章
+		$seriesArticle=ArticleSeries::getAllSeries();
 		//最新文章与最热文章
-		$articleModel=new Article();
 		$articlesNew=Article::getNewOrHotArticle('new');
 		$articlesHot=Article::getNewOrHotArticle('hot');
-		return view('home.index.index',compact('articleClassify','articlesNew','articlesHot'));
+		return view('home.index.index',compact('articleClassify','articlesNew','articlesHot','seriesArticle'));
 	}
 
 	/**

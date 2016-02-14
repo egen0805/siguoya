@@ -19,6 +19,8 @@ class CreateArticleSeriesTable extends Migration
             $table->string('series_cover');
             $table->tinyInteger('series_main_classify');
             $table->tinyInteger('series_sub_classify');
+            $table->tinyInteger('series_status');
+            $table->tinyInteger('series_order');
             $table->dateTime('created_at');
             $table->dateTime('updated_at');
         });

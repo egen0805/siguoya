@@ -21,8 +21,12 @@ class ArticleSeries extends Model
 		'series_cover'
 	];
 
+	public static function getAllSeries(){
+		return ArticleSeries::orderBy('series_order','ASC')->get();
+	}
+
 	/**
-	 * 获取主分类和子分类下的专题
+	 * 获取主分类和子分类下的系列
 	 * @param $mainClassify
 	 * @param $subClassify
 	 * @return mixed
@@ -30,6 +34,10 @@ class ArticleSeries extends Model
 	public static function getSeriesByClassify($mainClassify,$subClassify){
 		return ArticleSeries::where('series_main_classify','=',$mainClassify)->where('series_sub_classify','=',$subClassify)->get();
 	}
+
+	/**
+	 *
+	 */
 
 	/**
 	 * 解析系列封面的json数据
@@ -41,7 +49,7 @@ class ArticleSeries extends Model
 	}
 
 	/**
-	 * 获取主分类ID对应的名称
+	 * 获取系列分类所属的文章主分类ID对应的名称
 	 * @param $value
 	 * @return mixed
 	 */
@@ -50,7 +58,7 @@ class ArticleSeries extends Model
 	}
 
 	/**
-	 * 获取子分类ID对应的名称
+	 * 获取系列分类所属的文章子分类ID对应的名称
 	 * @param $value
 	 * @return mixed
 	 */
