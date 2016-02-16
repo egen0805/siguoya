@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?=url('/')?>"><h1>思过崖</h1></a>
+            <a class="navbar-brand" href="<?=url('/')?>"><h1>思过崖&曾庆权</h1></a>
         </div>
         <div class="collapse navbar-collapse" id="example-navbar-collapse">
             <ul class="nav navbar-nav">

@@ -8,15 +8,15 @@
                 </a>
                 <h3 class="text-danger">你想成为什么样的程序猿?</h3>
                 <ul>
-                    <li><span class="text-danger">90%的人属于三流公司招聘的程序员：</span>日复一日的写业务逻辑，修改bug，学当下最流行的框架，不断巩固实践，直到能够单独带领团队，成为所谓的全栈式开发。
+                    <li><span class="text-danger">90%的程序猿属于三流公司招聘的程序猿：</span>日复一日的写业务逻辑，修改bug，学当下最流行的框架，不断巩固实践，直到能够单独带领团队，成为所谓的全栈式开发。
                        以为代码就是一切，产品就是一切，不断的摸爬滚打，若干年后达到这个层次的金字塔顶端，可是依然摆脱不了最底层的码农称谓。
                        你所看到的不是全世界，其实是最底层。
                     </li>
                     <li>
-                       <span class="text-danger">7%的人是二流公司的架构师或者cto：</span>凡事都要刨根究底，拿到一个框架就要研究源代码，看看效率如何，怎么改更好。这种人往往积极性很高，逻辑思维强，往往是很多公司的技术总监，对每一行代码都要想想在机器上发生的事情。他们工作在it的前沿，最新资源，消息往往是最早知道的！
+                       <span class="text-danger">7%的程序猿是二流公司的架构师或者cto：</span>凡事都要刨根究底，拿到一个框架就要研究源代码，看看效率如何，怎么改更好。这种人往往积极性很高，逻辑思维强，往往是很多公司的技术总监，对每一行代码都要想想在机器上发生的事情。他们工作在it的前沿，最新资源，消息往往是最早知道的！
                     </li>
-                    <li><span class="text-danger">2.9%的人是一流公司招聘的核心研发人员，国际标准化组织会员：</span>真正意义上的软件研发，从无到有的过程，他们往往是各大框架的制定者，各种标准的参与者。</li>
-                    <li><span class="text-danger">最后那0.1%的人更多的是天才，能够发明新东西的人：</span>c语言之父，图灵等等。</li>
+                    <li><span class="text-danger">2.9%的程序猿是一流公司招聘的核心研发人员，国际标准化组织会员：</span>真正意义上的软件研发，从无到有的过程，他们往往是各大框架的制定者，各种标准的参与者。</li>
+                    <li><span class="text-danger">最后那0.1%的程序猿更多的是天才，能够发明新东西的人：</span>c语言之父，图灵等等。</li>
                 </ul>
             </div>
         </div>
@@ -73,24 +73,24 @@
     <div id="other_list" class="col-xs-12 col-md-3">
         <div class="panel panel-warning">
             <div class="panel-heading">
-                <h3 class="panel-title">我爱这个世界</h3>
+                <h3 class="panel-title">写代码这么好玩的事还能挣钱</h3>
             </div>
             <div class="panel-body padding-none">
-                <embed width="100%" height="200px" src="http://player.youku.com/player.php/sid/XMTQ0OTUxNjc5Ng==/v.swf" allowFullScreen="true" quality="high"  align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+                <embed title="思过崖的の视频" width="100%" height="200px" src="http://player.youku.com/player.php/sid/XMTQ0OTUxNjc5Ng==/v.swf" allowFullScreen="true" quality="high"  align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
             </div>
             <div class="panel-footer">
-                <span class="text-info">写代码这么好玩的事还能挣钱~~</span>
+                <span class="text-info">思过崖深爱の这个世界</span>
             </div>
         </div>
         <div class="panel panel-danger">
             <div class="panel-heading">
-                <h3 class="panel-title">程序员翻墙必备</h3>
+                <h3 class="panel-title">程序猿翻墙必备</h3>
             </div>
             <div class="panel-body padding-none">
-                <a href="/home/os/tools/greenvpn" target="_blank"><img src="/img/home/index/greenvpn.jpg " class="img-responsive" alt="greenvpn"></a>
+                <a href="/home/os/tools/greenvpn" target="_blank"><img title="greenvpn" src="/img/home/index/greenvpn.jpg " class="img-responsive" alt="greenvpn"></a>
             </div>
             <div class="panel-footer">
-                <span class="text-info">程序员的梦想应该是星辰大海</span>
+                <span class="text-info">程序猿的梦想应该是星辰大海</span>
             </div>
         </div>
         <div class="panel panel-info panel-list-group">
@@ -150,10 +150,10 @@
         </div>
         <div class="panel panel-info">
             <div class="panel-heading">
-                <h3 class="panel-title">扫我! 扫我!</h3>
+                <h3 class="panel-title">思过崖の微信</h3>
             </div>
             <div class="panel-body padding-none">
-                <a href="/home/about/me" target="_blank"><img src="/img/home/index/weixin.jpg" class="img-responsive" alt="个人二维码"></a>
+                <a href="/home/about/me" target="_blank"><img src="/img/home/index/weixin.jpg" title="思过崖の微信" class="img-responsive" alt="思过崖&曾庆权的微信"></a>
             </div>
             <div class="panel-footer">
                 <span class="text-info">我有故事，你有酒吗？</span>
@@ -161,13 +161,24 @@
         </div>
         <div class="panel panel-primary">
             <div class="panel-heading">
-                <h3 class="panel-title">思过崖在知乎</h3>
+                <h3 class="panel-title">思过崖の知乎</h3>
             </div>
             <div class="panel-body padding-none">
-                <a href="https://www.zhihu.com/people/siguoya" target="_blank"><img src="/img/home/index/zhihu.png" class="img-responsive" alt="思过崖在知乎"></a>
+                <a href="https://www.zhihu.com/people/siguoya" target="_blank"><img title="思过崖の知乎" src="/img/home/index/zhihu.png" class="img-responsive" alt="思过崖&曾庆权の知乎"></a>
             </div>
             <div class="panel-footer">
                 <span class="text-info">关注编程技术与互联网产品。。。</span>
+            </div>
+        </div>
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">思过崖のGithub</h3>
+            </div>
+            <div class="panel-body padding-none">
+                <a href="https://github.com/zy108830" target="_blank"><img title="思过崖のGithub" src="/img/home/index/github.jpg" class="img-responsive" alt="思过崖&曾庆权のGithub"></a>
+            </div>
+            <div class="panel-footer">
+                <span class="text-info">Gayhub，世界最大的男同交友中心</span>
             </div>
         </div>
         <div class="panel panel-info">
