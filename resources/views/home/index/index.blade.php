@@ -93,40 +93,40 @@
                 <span class="text-info">程序猿的梦想应该是星辰大海</span>
             </div>
         </div>
-        <div class="panel panel-info panel-list-group">
-            <div class="panel panel-heading">
-                <h3 class="panel-title">提供网站免费搭建服务</h3>
-            </div>
-            <div class="panel panel-body padding-none">
-                <a href="http://www.aliyun.com/" target="_blank">
-                    <img class="img-responsive" src="/img/home/index/cloud.jpg" alt="阿里云">
-                </a>
-            </div>
-            <div class="panel panel-footer">
-                <div class="list-group">
-                    <a href="#" class="list-group-item">
-                        <h5 class="list-group-item-heading">
-                            使用国内最好的阿里云服务器
-                        </h5>
-                        <p class="list-group-item-text">
-                            基于最流行的LNMP开发环境
-                        </p>
-                    </a>
-                    <a href="#" class="list-group-item">
-                        <h5 class="list-group-item-heading">
-                            域名注册在阿里旗下的万网
-                        </h5>
-                        <p class="list-group-item-text">快速解析,备案无后顾之忧</p>
-                    </a>
-                    <a href="#" class="list-group-item">
-                        <h5 class="list-group-item-heading">
-                            长期低成本7x24小时的服务器维护
-                        </h5>
-                        <p class="list-group-item-text">运维交给我,您只管安心地去运营</p>
-                    </a>
-                </div>
-            </div>
-        </div>
+        {{--<div class="panel panel-info panel-list-group">--}}
+            {{--<div class="panel panel-heading">--}}
+                {{--<h3 class="panel-title">提供网站免费搭建服务</h3>--}}
+            {{--</div>--}}
+            {{--<div class="panel panel-body padding-none">--}}
+                {{--<a href="http://www.aliyun.com/" target="_blank">--}}
+                    {{--<img class="img-responsive" src="/img/home/index/cloud.jpg" alt="阿里云">--}}
+                {{--</a>--}}
+            {{--</div>--}}
+            {{--<div class="panel panel-footer">--}}
+                {{--<div class="list-group">--}}
+                    {{--<a href="#" class="list-group-item">--}}
+                        {{--<h5 class="list-group-item-heading">--}}
+                            {{--使用国内最好的阿里云服务器--}}
+                        {{--</h5>--}}
+                        {{--<p class="list-group-item-text">--}}
+                            {{--基于最流行的LNMP开发环境--}}
+                        {{--</p>--}}
+                    {{--</a>--}}
+                    {{--<a href="#" class="list-group-item">--}}
+                        {{--<h5 class="list-group-item-heading">--}}
+                            {{--域名注册在阿里旗下的万网--}}
+                        {{--</h5>--}}
+                        {{--<p class="list-group-item-text">快速解析,备案无后顾之忧</p>--}}
+                    {{--</a>--}}
+                    {{--<a href="#" class="list-group-item">--}}
+                        {{--<h5 class="list-group-item-heading">--}}
+                            {{--长期低成本7x24小时的服务器维护--}}
+                        {{--</h5>--}}
+                        {{--<p class="list-group-item-text">运维交给我,您只管安心地去运营</p>--}}
+                    {{--</a>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
         <div class="panel panel-success">
             <div class="panel-heading">
                 <h3 class="panel-title">系列文章</h3>
