@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?=url('/')?>"><h1>思过崖&曾庆权</h1></a>
+            <a class="navbar-brand" href="<?=url('/')?>"><h1>思过崖&曾庆权&程序猿</h1></a>
         </div>
         <div class="collapse navbar-collapse" id="example-navbar-collapse">
             <ul class="nav navbar-nav">
@@ -27,9 +27,6 @@
                         </ul>
                     </li>
                 @endforeach
-
-            </ul>
-            <ul id="nav-pull-right" class="nav navbar-nav pull-right">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         社区
@@ -49,18 +46,40 @@
                         @endif
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        关于
-                        <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="{{url('/home/about/me')}}">个人</a></li>
-                        <li><a href="{{url('/home/about/offer')}}">求职</a></li>
-                        {{--<li><a href="{{url('/home/about/web')}}">网站</a></li>--}}
-                    </ul>
-                </li>
+
             </ul>
+            {{--<ul id="nav-pull-right" class="nav navbar-nav pull-right">--}}
+                {{--<li class="dropdown">--}}
+                    {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--}}
+                        {{--社区--}}
+                        {{--<b class="caret"></b>--}}
+                    {{--</a>--}}
+                    {{--<ul class="dropdown-menu">--}}
+                        {{--@if($_SERVER["SERVER_ADDR"]=='120.24.253.51')--}}
+                            {{--<li><a href="http://wenda.siguoya.name">发现</a></li>--}}
+                            {{--<li><a href="http://wenda.siguoya.name/?/home/#all">动态</a></li>--}}
+                            {{--<li><a href="http://wenda.siguoya.name/?/topic/">话题</a></li>--}}
+                            {{--<li><a href="http://wenda.siguoya.name/?/notifications/">通知</a></li>--}}
+                        {{--@else--}}
+                            {{--<li><a href="http://wenda.firstdomain.name">发现</a></li>--}}
+                            {{--<li><a href="http://wenda.firstdomain.name/?/home/#all">动态</a></li>--}}
+                            {{--<li><a href="http://wenda.firstdomain.name/?/topic/">话题</a></li>--}}
+                            {{--<li><a href="http://wenda.firstdomain.name/?/notifications/">通知</a></li>--}}
+                        {{--@endif--}}
+                    {{--</ul>--}}
+                {{--</li>--}}
+                {{--<li class="dropdown">--}}
+                    {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown">--}}
+                        {{--关于--}}
+                        {{--<b class="caret"></b>--}}
+                    {{--</a>--}}
+                    {{--<ul class="dropdown-menu">--}}
+                        {{--<li><a href="{{url('/home/about/me')}}">个人</a></li>--}}
+                        {{--<li><a href="{{url('/home/about/offer')}}">求职</a></li>--}}
+                        {{--<li><a href="{{url('/home/about/web')}}">网站</a></li>--}}
+                    {{--</ul>--}}
+                {{--</li>--}}
+            {{--</ul>--}}
         </div>
     </div>
 </nav>
