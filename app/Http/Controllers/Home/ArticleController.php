@@ -49,7 +49,7 @@ class ArticleController extends Controller{
 	 * 并更新文章浏览次数
 	 * 相关推荐
 	 */
-	public function show(){
+	public function show($id){
 		$articleId=$this->urlArray[count($this->urlArray)-1];
 		$article=Article::find($articleId);
 		$article->article_view_count+=1;

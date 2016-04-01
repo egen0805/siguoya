@@ -10,6 +10,28 @@ Route::group(['namespace'=>'Home'],function(){
 	/**
 	 * 静态页面
 	 */
+	//使用as给路由定义一个别名,可以更容易地使用route()方法创建链接和重定向;
+	Route::get('/home/zqq',[
+			'as'=>'zqq',
+			'uses'=>'TestController@zqq'
+	]);
+
+	Route::group(['middleware'=>'auth'],function(){
+		Route::get('/home/test/auth',function(){
+			return '有权限控制';
+		});
+	});
+
+
+
+
+
+
+
+
+
+	Route::get('/home/test/test','TestController@test');
+	Route::resource('/home/test','TestController');
 	Route::get('/home/about/personal',function(){return view('home.about.personal');});
 	Route::get('/home/about/web',function(){return view('home.about.web');});
 	Route::get('/home/about/me',function(){return view('home.about.me');});

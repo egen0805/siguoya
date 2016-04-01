@@ -1,11 +1,17 @@
+#编辑器文件
+/.idea/*
+
 #博客模块
 /storage/framework/*
 /storage/logs/*
 /resources/assets/*
 /public/upload/*
+/public/*
+/config/*
+/.env
 
 #问答社区模块
 /wenda/uploads/*
 /wenda/cache/*
 /wenda/tmp/*
-/.idea/*
+/wenda/system/*

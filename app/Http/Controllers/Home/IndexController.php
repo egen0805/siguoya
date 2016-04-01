@@ -13,6 +13,13 @@ use App\Http\Controllers\common\Controller;
  */
 class IndexController extends Controller{
 
+	/**
+	 *  在控制器里面指定中间件
+	 *  IndexController constructor.
+		public function __construct(){
+			$this->middleware('auth');
+		}
+	*/
 
 	/**默认的控制器的默认方法
 	 * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
