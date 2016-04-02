@@ -1,5 +1,6 @@
 #编辑器文件
 /.idea/*
+/node_modules/*
 
 #博客模块
 /storage/framework/*
