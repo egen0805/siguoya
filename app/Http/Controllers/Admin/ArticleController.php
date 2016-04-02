@@ -20,22 +20,20 @@ class ArticleController extends Controller{
 	}
 
 	public function store(){
-		echo Article::create(\Request::all());
+		echo Article::create(\Request::all())?true:false;
 	}
 
-	public function edit($id){
-		$article=Article::find($id);
+	public function edit(Article $article){
 		$classifyList=ArticleClassify::getClassifyList(0);
 		return view('admin.article.edit',compact('article','classifyList'));
 	}
 
-	public function update(){
+	public function update(Article $article){
 		$data=\Request::all();
 		if(gettype(json_decode(\Request::input('article_cover')))=='NULL'){
 			unset($data['article_cover']);
 		}
-		$article=Article::find(\Request::input('article_id'));
-		echo $article->update($data);
+		echo $article->update($data)?true:false;
 	}
 
 	public function destroy(){

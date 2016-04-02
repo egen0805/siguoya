@@ -25,7 +25,6 @@ class RouteServiceProvider extends ServiceProvider{
 		 * 如果绑定,那么接收的参数将为根据Restful的目标而自动获取的查询结果集
 		 * arg1:路由里面的增删查改的对象
 		 * arg2:对象对应的模型
-		 *
 		 */
 		$router->model('article','App\Article');
 	}
