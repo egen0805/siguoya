@@ -192,7 +192,7 @@ $(function(){
         //本地
         location.href.indexOf('localhost')<0&&
         //社区
-        location.href.indexOf('firstdomain')
+        location.href.indexOf('yfx')
     ){
         //百度统计代码
         var _hmt=_hmt||[];

@@ -1,4 +1,11 @@
 @extends('home.common.layout')
+@section('css')
+    <style type="text/css">
+        #markdown{
+            background-color: #f5f5f5;
+        }
+    </style>
+@endsection
 @section('main')
     <div class="row">
         <div class="col-xs-12 col-sm-9">

@@ -22,6 +22,7 @@ Route::group(['namespace'=>'Admin','middleware'=>['auth']],function(){
 	//类别
 	Route::resource('/admin/classify','ClassifyController');
 	//系列
+	Route::resource('/admin/series/group','Series\GroupController');
 	Route::resource('/admin/series','SeriesController');
 });
 

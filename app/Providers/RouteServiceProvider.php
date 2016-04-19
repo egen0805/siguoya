@@ -27,6 +27,7 @@ class RouteServiceProvider extends ServiceProvider{
 		 * arg2:对象对应的模型
 		 */
 		$router->model('article','App\Article');
+		$router->model('group','App\Group');
 	}
 
 	/**

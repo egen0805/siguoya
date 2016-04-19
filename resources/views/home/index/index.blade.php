@@ -1,4 +1,12 @@
 @extends('home.common.layout')
+@section('css')
+    <style type="text/css">
+        .panel-footer{
+            padding: 0 15px;
+            height: 50px;
+        }
+    </style>
+@endsection
 @section('main')
     <div class="col-xs-12 col-md-9">
         <div class="col-xs-12">
@@ -21,7 +29,7 @@
             </div>
         </div>
         <div id="new_list" class="col-xs-12 col-sm-4">
-            <div id="append_new" class="panel panel-info">
+            <div id="append_new" class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">最新文章</h3>
                 </div>
@@ -44,7 +52,7 @@
             </div>
         </div>
         <div id="hot_list" class="hidden-xs col-sm-8">
-            <div id="hotArticle" class="panel panel-info">
+            <div id="hotArticle" class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">最热文章</h3>
                 </div>
@@ -79,7 +87,11 @@
                 <embed title="思过崖的の视频" width="100%" height="200px" src="http://player.youku.com/player.php/sid/XMTQ0OTUxNjc5Ng==/v.swf" allowFullScreen="true" quality="high"  align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
             </div>
             <div class="panel-footer">
-                <span class="text-info">思过崖深爱の这个世界</span>
+                <p class="text-center">
+                    <a href="http://v.youku.com/v_show/id_XMTQ0OTUxNjc5Ng==.html?firsttime=0">
+                        思过崖深爱の这个世界
+                    </a>
+                </p>
             </div>
         </div>
         <div class="panel panel-danger">
@@ -90,7 +102,12 @@
                 <a href="/home/os/tools/greenvpn" target="_blank"><img title="greenvpn" src="/img/home/index/greenvpn.jpg " class="img-responsive" alt="greenvpn"></a>
             </div>
             <div class="panel-footer">
-                <span class="text-info">程序猿的梦想应该是星辰大海</span>
+                <p class="text-center">
+                    <a href="/home/os/tools/greenvpn">
+                        程序猿的梦想应该是星辰大海
+                    </a>
+                </p>
+                {{--<span class="text-info"></span>--}}
             </div>
         </div>
         {{--<div class="panel panel-info panel-list-group">--}}
@@ -156,7 +173,11 @@
                 <a href="/home/about/me" target="_blank"><img src="/img/home/index/weixin.jpg" title="思过崖の微信" class="img-responsive" alt="思过崖&曾庆权的微信"></a>
             </div>
             <div class="panel-footer">
-                <span class="text-info">我有故事，你有酒吗？</span>
+                <p class="text-center">
+                    <a href="/home/about/me">
+                        我有故事，你有酒吗？
+                    </a>
+                </p>
             </div>
         </div>
         <div class="panel panel-primary">
@@ -167,7 +188,11 @@
                 <a href="https://www.zhihu.com/people/siguoya" target="_blank"><img title="思过崖の知乎" src="/img/home/index/zhihu.png" class="img-responsive" alt="思过崖&曾庆权の知乎"></a>
             </div>
             <div class="panel-footer">
-                <span class="text-info">关注编程技术与互联网产品。。。</span>
+                <p class="text-center">
+                    <a href="https://www.zhihu.com/people/siguoya">
+                        关注编程与互联网产品
+                    </a>
+                </p>
             </div>
         </div>
         <div class="panel panel-primary">
@@ -178,16 +203,23 @@
                 <a href="https://github.com/zy108830" target="_blank"><img title="思过崖のGithub" src="/img/home/index/github.jpg" class="img-responsive" alt="思过崖&曾庆权のGithub"></a>
             </div>
             <div class="panel-footer">
-                <span class="text-info">Gayhub，世界最大的男同交友中心</span>
+                <p class="text-center">
+                    <a href="https://github.com/zy108830">
+                        Gayhub，男同交友中心
+                    </a>
+                </p>
             </div>
         </div>
         <div class="panel panel-info">
             <div class="panel-heading">
                 <h3 class="panel-title">友情链接</h3>
             </div>
-            <div class="panel-body">
+            <div class="panel-body" style="padding: 0 15px;">
                 <ul class="list-unstyled">
-                    <li><a target="_blank" href="http://irudder.me/wpblog/">艾文逗</a></li>
+                    <li>
+                        <p><a target="_blank" href="http://irudder.me/wpblog/">艾文逗</a></p>
+                        <p><a target="_blank" href="http://demonzone.cn/">蝶梦小筑</a></p>
+                    </li>
                 </ul>
             </div>
         </div>

@@ -1,10 +1,4 @@
 @extends('admin.common.layout')
-@section('css')
-    <link rel="stylesheet" href="/vendor/select2/select2.min.css">
-@endsection
-@section('js')
-    <script src="/vendor/select2/select2.min.js"></script>
-@endsection
 @section('main')
     <div class="row">
         @foreach($seriesList as $series)

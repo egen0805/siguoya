@@ -39,10 +39,10 @@
                             <li><a href="http://wenda.siguoya.name/?/topic/">话题</a></li>
                             <li><a href="http://wenda.siguoya.name/?/notifications/">通知</a></li>
                         @else
-                            <li><a href="http://wenda.firstdomain.name">发现</a></li>
-                            <li><a href="http://wenda.firstdomain.name/?/home/#all">动态</a></li>
-                            <li><a href="http://wenda.firstdomain.name/?/topic/">话题</a></li>
-                            <li><a href="http://wenda.firstdomain.name/?/notifications/">通知</a></li>
+                            <li><a href="http://wenda.yfx.name">发现</a></li>
+                            <li><a href="http://wenda.yfx.name/?/home/#all">动态</a></li>
+                            <li><a href="http://wenda.yfx.name/?/topic/">话题</a></li>
+                            <li><a href="http://wenda.yfx.name/?/notifications/">通知</a></li>
                         @endif
                     </ul>
                 </li>
