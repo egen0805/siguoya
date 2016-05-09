@@ -13,3 +13,4 @@
 /wenda/uploads/*
 /wenda/cache/*
 /wenda/tmp/*
+database.php

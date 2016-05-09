@@ -219,6 +219,8 @@
                     <li>
                         <p><a target="_blank" href="http://irudder.me/wpblog/">艾文逗</a></p>
                         <p><a target="_blank" href="http://demonzone.cn/">蝶梦小筑</a></p>
+                        <p><a target="_blank" href="http://ursb.m/">Airing</a></p>
+                        <p><a target="_blank" href="http://www.psy-1.com/">我目前所在的公司</a></p>
                     </li>
                 </ul>
             </div>
